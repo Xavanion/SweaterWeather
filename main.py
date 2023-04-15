@@ -5,7 +5,6 @@ import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
 import json
-import requests
 
 def search(configuration):
     # create an instance of the API class
@@ -16,7 +15,10 @@ def search(configuration):
     try:
         # Search/Autocomplete API
         api_response = api_instance.search_autocomplete_weather(q)
-        pprint(api_response)
+        data = api_response.to_dict()
+        with open('search.json', 'w') as f:
+            f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
+        #pprint(api_response)
     except ApiException as e:
         print("Exception when calling APIsApi->search_autocomplete_weather: %s\n" % e)
 
@@ -24,10 +26,14 @@ def real_time(cur_location, configuration):
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = cur_location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
+    
     try:
         # Realtime API
         api_response = api_instance.realtime_weather(q)
-        pprint(api_response)
+        data = api_response.to_dict()
+        with open('real_time.json', 'w') as f:
+            f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
+        #pprint(api_response)
     except ApiException as e:
         print("Exception when calling APIsApi->realtime_weather: %s\n" % e)
 
@@ -40,7 +46,10 @@ def future(cur_location, configuration):
     try:
         # Future API dt is 14-300 days in the future
         api_response = api_instance.future_weather(q, dt=dt)
-        pprint(api_response)
+        data = api_response.to_dict()
+        with open('future.json', 'w') as f:
+            f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
+        #pprint(api_response)
     except ApiException as e:
         print("Exception when calling APIsApi->future_weather: %s\n" % e)
 
@@ -57,7 +66,10 @@ def history(cur_location, configuration):
     try:
         # History API
         api_response = api_instance.history_weather(q, dt, end_dt=end_dt, hour=hour)
-        pprint(api_response)
+        data = api_response.to_dict()
+        with open('history.json', 'w') as f:
+            f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
+        #pprint(api_response)
     except ApiException as e:
         print("Exception when calling APIsApi->history_weather: %s\n" % e)
 
