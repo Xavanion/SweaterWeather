@@ -21,7 +21,7 @@ p {
   width: 100%;
   min-height: 100vh;
   padding: 0%;
-  background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.5)), url(/static/assets/background.png);
+  background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.1)), url(/static/assets/background.png);
   background-position: center;
   background-size: cover;
   display: flex;
