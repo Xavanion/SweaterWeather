@@ -102,7 +102,7 @@ def main():
     # Configure API key authorization: ApiKeyAuth
     configuration = swagger_client.Configuration()
     configuration.api_key['key'] = ''
-
+    
     forecast(cur_location, configuration)
 
 
