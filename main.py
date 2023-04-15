@@ -4,6 +4,8 @@ import geocoder
 import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
+import json
+import requests
 
 def search(configuration):
     # create an instance of the API class
@@ -71,7 +73,10 @@ def forecast(cur_location, configuration):
     try:
         # Forecast API
         api_response = api_instance.forecast_weather(q, days, dt=dt, hour=hour)
-        pprint(api_response)
+        data = api_response.to_dict()
+        with open('forecast.json', 'w') as f:
+            f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
+        #pprint(api_response)
     except ApiException as e:
         print("Exception when calling APIsApi->forecast_weather: %s\n" % e)
 
