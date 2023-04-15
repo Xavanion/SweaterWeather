@@ -49,11 +49,6 @@ def real_time(location):
         print("Exception when calling APIsApi->realtime_weather: %s\n" % e)
 
 def future(location, date):
-    # Creates date for API class
-    date = datetime.datetime.strptime(date, '%Y-%m-%d').date()
-    if (date - datetime.timedelta(days=14)) >= today:
-        pass
-
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
@@ -129,10 +124,12 @@ def site():
                 history(cur_location, flask.request.form.get("WeatherDate"))
             elif radio_choice == 'Forecast':
                 forecast(cur_location)
+            elif radio_choice == 'FutureData':
+                future(cur_location, flask.request.form.get("FutureDate"))
             if (city_name:=flask.request.form['location']):
                 real_time(city_name)
         # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
-        return flask.render_template("index.html", today = str(today), future_min= str(int(today)+14), future_max= str(int(today)+300))
+        return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)))
 
     app.run(debug=True)
 
