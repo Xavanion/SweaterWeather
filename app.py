@@ -4,7 +4,6 @@ from pprint import pprint
 import geocoder, swagger_client, json, flask, sqlite3, datetime
 #from read_json import Read
 
-
 # Configure API key authorization: ApiKeyAuth
 configuration = swagger_client.Configuration()
 configuration.api_key['key'] = ''
@@ -64,8 +63,6 @@ def future(location, date):
     except ApiException as e:
         print("Exception when calling APIsApi->future_weather: %s\n" % e)
 
-
-
 def history(location, date):
     # Creates start/end date for API class
     date = datetime.datetime.strptime(date, '%Y-%m-%d').date()
@@ -91,7 +88,6 @@ def history(location, date):
             f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
     except ApiException as e:
         print("Exception when calling APIsApi->history_weather: %s\n" % e)
-
 
 def forecast(location):
     # create an instance of the API class
@@ -134,7 +130,6 @@ def site():
 
     app.run(debug=True)
 
-
 def main():
     # Create SQL Datadase
     #conn = sqlite3.connect('email_database.db')
@@ -142,14 +137,6 @@ def main():
     #c.execute("""CREATE TABLE emails()""")
 
     site()
-
-    '''
-    forecast(cur_location)
-    history(cur_location)
-    future(cur_location)
-    real_time(cur_location)
-    search()
-    '''
 
 
 if __name__ == "__main__":

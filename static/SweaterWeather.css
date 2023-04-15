@@ -1,5 +1,6 @@
 body {
   background-color: rgb(243, 254, 255);
+  margin: 0;
 }
 
 
@@ -20,7 +21,6 @@ p {
 .container{
   width: 100%;
   min-height: 100vh;
-  padding: 0%;
   background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.1)), url(/static/assets/background.png);
   background-position: center;
   background-size: cover;
@@ -44,8 +44,22 @@ p {
   padding: 10px 20px;
 }
 
+input[name="location"]{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 150px;
+  flex: 1;
+  padding: 5px 5px;
+  font-size: 15px;
+}
+
+::placeholder{
+  color:rgba(255, 255, 255, 0.747);
+}
+
 button[type="submit"] {
-  background-color: #7d848b; /* Set background color */
+  background-color: transparent; /* Set background color */
   border: none; /* Remove border */
   color: white; /* Set text color */
   text-align: center; /* Center text */
@@ -76,14 +90,16 @@ line-height: 20px;
 }
 
 .formBox {
-  width: 600px;
+  width: auto;
   height: auto;
   margin: 0 auto;
-  padding: 0;
+  padding: 20px;
   position: relative;
   line-height: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-radius: 20px;
+  background-color: #ffffffbe;
 }
 
 input[type=button], input[type=submit], input[type=reset], input[type=radio] {
@@ -105,8 +121,4 @@ input[type=date] {
   margin: 4px 2px;
   text-align: center;
 }
-input[name=location] {
-  background-color: rgb(243, 254, 255); 
-  width: 150px;
-  border-color: #04AA6D;
-}
+
