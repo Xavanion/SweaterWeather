@@ -2,7 +2,7 @@ from __future__ import print_function
 from swagger_client.rest import ApiException
 from pprint import pprint
 import geocoder, swagger_client, json, flask, sqlite3, datetime
-from read_json import Read
+#from read_json import Read
 
 
 # Configure API key authorization: ApiKeyAuth
@@ -113,7 +113,7 @@ def forecast(location):
 def site():
     # Make Flask App
     app = flask.Flask(__name__)
-    @app.route('/', methods=['POST'])
+    @app.route('/', methods=['GET', 'POST'])
     def index():
         # Takes form method post with name city and sets that equal to city name
         # Thinking of passing cityname to insert_record for sql database for later email list/recommendations

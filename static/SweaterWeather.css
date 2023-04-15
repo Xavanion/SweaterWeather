@@ -2,6 +2,7 @@ body {
   background-color: rgb(243, 254, 255);
 }
 
+
 h1 {
   color: navy;
   margin: auto;
@@ -16,9 +17,18 @@ p {
   color: navy;
 }
 
+.container{
+  width: 100%;
+  min-height: 100vh;
+  padding: 5%;
+  background-image: linear-gradient(rgba(0,8,51,0.9), rgba(0,8,51,0.9), url(/assets/background.png));
+  background-position: center;
+  background-size: cover;
+}
+
 .formSubmission {
 background-color: rgb(170, 255, 177); 
-height: 310px;
+height: 500px;
 width: 600px;
 margin: auto;
 padding-top: 15px;
@@ -34,7 +44,7 @@ line-height: 20px;
   width: 600px; /* Can be in percentage also. */
   height: auto;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0;
   position: relative;
   line-height: 25px;
   padding-top: 20px;
