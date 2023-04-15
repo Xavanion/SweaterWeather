@@ -114,8 +114,6 @@ def site():
         # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
         return flask.render_template("index.html")
 
-
-
     app.run(debug=True)
 
 
