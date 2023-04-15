@@ -97,10 +97,14 @@ def site():
     app = flask.Flask(__name__)
     @app.route('/', methods=['GET', 'POST'])
     def index():
+        # Takes form method post with name city and sets that equal to city name
+        # Thinking of passing cityname to insert_record for sql database for later email list/recommendations
         if flask.request.method == "POST":
             city_name = flask.request.form['city']
             print(city_name)
+        # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
         return flask.render_template("index.html")
+
 
     def insert_record(city_name):
         # Maybe take city_name from index and insert into sql here?
