@@ -26,4 +26,37 @@ padding-right: 70px;
 padding-bottom: 15px;
 padding-left: 70px;
 border: 3px solid green;
+text-align: center;
+line-height: 20px;
+}
+
+.formBox {
+  width: 600px; /* Can be in percentage also. */
+  height: auto;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+  line-height: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=radio] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-align: center;
+}
+input[type=date] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 4px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  text-align: center;
 }
