@@ -92,17 +92,7 @@ def forecast(cur_location, configuration):
     except ApiException as e:
         print("Exception when calling APIsApi->forecast_weather: %s\n" % e)
 
-
-def main():
-    #Location Stoof
-    g = geocoder.ip('me')
-    cur_location = [str(x) for x in g.latlng]
-    cur_location = ','.join(cur_location)
-
-    # Configure API key authorization: ApiKeyAuth
-    configuration = swagger_client.Configuration()
-    configuration.api_key['key'] = ''
-
+def site():
     # Make Flask App
     app = flask.Flask(__name__)
     @app.route('/', methods=['GET', 'POST'])
@@ -117,6 +107,19 @@ def main():
         pass
 
     app.run(debug=True)
+
+
+def main():
+    #Location Stoof
+    g = geocoder.ip('me')
+    cur_location = [str(x) for x in g.latlng]
+    cur_location = ','.join(cur_location)
+
+    # Configure API key authorization: ApiKeyAuth
+    configuration = swagger_client.Configuration()
+    configuration.api_key['key'] = ''
+
+    site()
 
     '''
     forecast(cur_location, configuration)
