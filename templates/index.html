@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sweater Weather</title>
+	</head>
+	<body>
+		<h1>This is Sweater Weather</h1>
+		<p>Sweater weather is an upcoming project designed by three KU students to
+			provide accessible weather data from 1978 to the current day.</p>
+		<form method="post">
+			<input type="checkbox" id="choice1" name="choice1" value="CurrentData">
+			<label for="choice1"> View current weather data</label><br>
+			<input type="checkbox" id="choice2" name="choice2" value="PastData">
+			<label for="choice2"> View past data</label><br>
+			<label for="start">Please choose the date if checking past weather data</label>
+			<input type="date" id="WeatherDate" name="WeatherDate"
+				value="2023-04-15"
+				min="1978-01-01" max="2023-04-15">
+			<input type="submit" value="GO!" /> <br> <br>
+			<label for="city">Choose a City!:  </label>
+			<input name="city" required>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>

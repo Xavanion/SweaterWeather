@@ -1,10 +1,8 @@
 from __future__ import print_function
-import time
-import geocoder
-import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
-import json
+import time, geocoder, swagger_client, json, flask, sqlite3
+
 
 def search(configuration):
     # create an instance of the API class
@@ -104,6 +102,21 @@ def main():
     # Configure API key authorization: ApiKeyAuth
     configuration = swagger_client.Configuration()
     configuration.api_key['key'] = ''
+
+    # Make Flask App
+    app = flask.Flask(__name__)
+    @app.route('/', methods=['GET', 'POST'])
+    def index():
+        if flask.request.method == "POST":
+            city_name = flask.request.form['city']
+            print(city_name)
+        return flask.render_template("index.html")
+
+    def insert_record(city_name):
+        # Maybe take city_name from index and insert into sql here?
+        pass
+
+    app.run(debug=True)
 
     '''
     forecast(cur_location, configuration)
