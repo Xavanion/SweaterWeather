@@ -2340,14 +2340,92 @@
                         "windchill_f": 9.4
                     }
                 ]
+            },
+            {
+                "_date": "2023-01-31",
+                "astro": {
+                    "moon_illumination": "73",
+                    "moon_phase": "Waxing Gibbous",
+                    "moonrise": "02:10 PM",
+                    "moonset": "04:52 AM",
+                    "sunrise": "08:28 AM",
+                    "sunset": "06:40 PM"
+                },
+                "date_epoch": 1675123200,
+                "day": {
+                    "avghumidity": 56,
+                    "avgtemp_c": -5.5,
+                    "avgtemp_f": 22.2,
+                    "avgvis_km": 10,
+                    "avgvis_miles": 6,
+                    "condition": {
+                        "code": 1003,
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+                        "text": "Partly cloudy"
+                    },
+                    "daily_chance_of_rain": null,
+                    "daily_chance_of_snow": null,
+                    "daily_will_it_rain": null,
+                    "daily_will_it_snow": null,
+                    "maxtemp_c": -0.8,
+                    "maxtemp_f": 30.7,
+                    "maxwind_kph": 10.8,
+                    "maxwind_mph": 6.7,
+                    "mintemp_c": -9.5,
+                    "mintemp_f": 14.9,
+                    "totalprecip_in": 0,
+                    "totalprecip_mm": 0,
+                    "uv": 2
+                },
+                "hour": [
+                    {
+                        "chance_of_rain": 0,
+                        "chance_of_snow": 0,
+                        "cloud": 3,
+                        "condition": {
+                            "code": 1000,
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                            "text": "Sunny"
+                        },
+                        "dewpoint_c": -13.5,
+                        "dewpoint_f": 7.7,
+                        "feelslike_c": -7.8,
+                        "feelslike_f": 18.0,
+                        "gust_kph": 14.4,
+                        "gust_mph": 8,
+                        "heatindex_c": -4.0,
+                        "heatindex_f": 24.8,
+                        "humidity": 43,
+                        "is_day": 1,
+                        "precip_in": 0,
+                        "precip_mm": 0,
+                        "pressure_in": 30.43,
+                        "pressure_mb": 1031,
+                        "temp_c": -4.0,
+                        "temp_f": 24.8,
+                        "time": "2023-01-31 12:00",
+                        "time_epoch": 1675188000,
+                        "uv": 2,
+                        "vis_km": 10,
+                        "vis_miles": 6,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0,
+                        "wind_degree": 202,
+                        "wind_dir": "SSW",
+                        "wind_kph": 9.0,
+                        "wind_mph": 5.6,
+                        "windchill_c": -7.8,
+                        "windchill_f": 18.0
+                    }
+                ]
             }
         ]
     },
     "location": {
         "country": "United States of America",
         "lat": 39.03,
-        "localtime": "2023-04-15 2:53",
-        "localtime_epoch": 1681545232,
+        "localtime": "2023-04-15 13:20",
+        "localtime_epoch": 1681582830,
         "lon": -95.21,
         "name": "Lawrence",
         "region": "Kansas",

@@ -7,6 +7,9 @@
 		<link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='SweaterWeather.css') }}">
 	</head>
 	<body>
+		<div class="container">
+			
+		</div>
 		<h1>This is Sweater Weather</h1>
 		<p>Sweater weather is an upcoming project designed by three KU students to
 			provide accessible weather data from 1978 to the current day.</p>
@@ -21,16 +24,28 @@
 					<input type="radio" id="choice1" name="radioChoice" value="CurrentData" checked="checked">
 					<label for="choice1"> View current weather data</label><br>
 
-					<input type="radio" id="choice3" name="radioChoice" value="Forecast">
-					<label for="choice3"> View forecast</label><br>
+					<input type="radio" id="choice2" name="radioChoice" value="Forecast">
+					<label for="choice2"> View forecast</label><br>
 
-					<input type="radio" id="choice2" name="radioChoice" value="PastData">
-					<label for="choice2"> View past data</label><br><br>
+					<input type="radio" id="choice3" name="radioChoice" value="PastData">
+					<label for="choice3"> View past data</label><br>
 
-					<label for="start">Please choose the date if checking past weather data: </label>
+					<label for="start"> Please choose the date if checking past weather data: </label>
 					<input type="date" id="WeatherDate" name="WeatherDate"
-						value="2023-04-15"
-						min="1978-01-01" max="2023-04-15"><br>
+						value="{{today}}"
+						min="1978-01-01" max="{{today}}"><br><br>
+
+					<input type="radio" id="choice4" name="radioChoice" value="FutureData">
+					<label for="choice4">View Future data</label> <br>
+
+					<label for="start"> Please choose the date if checking future weather data: </label>
+					<input type="date" id="FutureDate" name="FutureDate"
+						value="{{future_min}}"
+						min="{{future_min}}" max="{{future_max}}"><br><br>
+
+
+					<input type="submit" value="GO!" /> <br>
+
 					
 				</div>
 			</form>
