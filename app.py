@@ -31,7 +31,6 @@ def search():
         print(type(api_response))
         #with open('search.json', 'w') as f:
         #    f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
-        #pprint(api_response)
     except ApiException as e:
         print("Exception when calling APIsApi->search_autocomplete_weather: %s\n" % e)
 
@@ -46,15 +45,19 @@ def real_time(location):
         data = api_response.to_dict()
         with open('real_time.json', 'w') as f:
             f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
-        #pprint(api_response)
     except ApiException as e:
         print("Exception when calling APIsApi->realtime_weather: %s\n" % e)
 
-def future(location):
+def future(location, date):
+    # Creates date for API class
+    date = datetime.datetime.strptime(date, '%Y-%m-%d').date()
+    if (date - datetime.timedelta(days=14)) >= today:
+        pass
+
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
-    dt = '2023-06-20' # date | Date should be between today and next 14 day in yyyy-MM-dd format. e.g. '2015-01-01'  (optional)
+    dt = date # date | Date should be between today and next 14 day in yyyy-MM-dd format. e.g. '2015-01-01'  (optional)
 
     try:
         # Future API dt is 14-300 days in the future
@@ -62,14 +65,13 @@ def future(location):
         data = api_response.to_dict()
         with open('future.json', 'w') as f:
             f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
-        #pprint(api_response)
     except ApiException as e:
         print("Exception when calling APIsApi->future_weather: %s\n" % e)
 
 
 
 def history(location, date):
-    # create an instance of the API class
+    # Creates start/end date for API class
     date = datetime.datetime.strptime(date, '%Y-%m-%d').date()
     if (date + datetime.timedelta(days=30)) > today:
         date_end = today - datetime.timedelta(days=1)
@@ -77,6 +79,8 @@ def history(location, date):
         date_end = date + datetime.timedelta(days=30)
     date = str(date)
     date_end = str(date_end)
+
+    # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
     dt = date # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format
@@ -89,7 +93,6 @@ def history(location, date):
         data = api_response.to_dict()
         with open('history.json', 'w') as f:
             f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
-        #pprint(api_response)
     except ApiException as e:
         print("Exception when calling APIsApi->history_weather: %s\n" % e)
 
@@ -108,7 +111,6 @@ def forecast(location):
         data = api_response.to_dict()
         with open('forecast.json', 'w') as f:
             f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
-        #pprint(api_response)
     except ApiException as e:
         print("Exception when calling APIsApi->forecast_weather: %s\n" % e)
 
@@ -130,7 +132,7 @@ def site():
             if (city_name:=flask.request.form['location']):
                 real_time(city_name)
         # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
-        return flask.render_template("index.html", today = str(today))
+        return flask.render_template("index.html", today = str(today), future_min= str(int(today)+14), future_max= str(int(today)+300))
 
     app.run(debug=True)
 
