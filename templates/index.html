@@ -17,11 +17,11 @@
 			<form method="post">
 				<div class ="formBox">
 					<h1>This is Sweater Weather</h1> <br>
-					<p>Sweater weather is an upcoming project designed by three KU students to provide accessible weather data from 1978 to the current day.</p> <br>
+					<p>Sweater weather is a project designed by three KU students to provide easily accessible weather data from 1978 to the current day.</p> <br>
 					<input type="radio" id="choice3" name="radioChoice" value="PastData">
 					<label for="choice3"> View past data</label><br>
 
-					<label for="start"> Please choose the date if checking past weather data: </label>
+					<label for="start"> Choose a date to view past weather data: </label>
 					<input type="date" id="WeatherDate" name="WeatherDate"
 						value="{{today}}"
 						min="1978-01-01" max="{{today}}"><br><br>
@@ -29,7 +29,7 @@
 					<input type="radio" id="choice4" name="radioChoice" value="FutureData">
 					<label for="choice4">View Future data</label> <br>
 
-					<label for="start"> Please choose the date if checking future weather data: </label>
+					<label for="start"> Choose a date to view future weather data: </label>
 					<input type="date" id="FutureDate" name="FutureDate"
 						value="{{future_min}}"
 						min="{{future_min}}" max="{{future_max}}"><br><br>
