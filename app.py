@@ -121,9 +121,9 @@ def main():
     configuration.api_key['key'] = ''
 
     # Create SQL Datadase
-    conn = sqlite3.connect('email_database.db')
-    c = conn.cursor()
-    c.execute("""CREATE TABLE emails""")
+    #conn = sqlite3.connect('email_database.db')
+    #c = conn.cursor()
+    #c.execute("""CREATE TABLE emails()""")
 
     site()
 

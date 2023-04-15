@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(243, 254, 255);
+}
+
+h1 {
+  color: navy;
+  margin: auto;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  color: navy;
+}
+p {
+  text-align: center;
+  color: navy;
+}
+
+.formSubmission {
+background-color: rgb(170, 255, 177); 
+height: 200px;
+width: 600px;
+margin: auto;
+padding-top: 15px;
+padding-right: 70px;
+padding-bottom: 15px;
+padding-left: 70px;
+border: 3px solid green;
+}
