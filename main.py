@@ -5,7 +5,7 @@ import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
 
-def search():
+def search(configuration):
     # create an instance of the API class
     location = input('Enter a place: ')
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
@@ -18,7 +18,7 @@ def search():
     except ApiException as e:
         print("Exception when calling APIsApi->search_autocomplete_weather: %s\n" % e)
 
-def real_time(cur_location):
+def real_time(cur_location, configuration):
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = cur_location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
@@ -29,7 +29,7 @@ def real_time(cur_location):
     except ApiException as e:
         print("Exception when calling APIsApi->realtime_weather: %s\n" % e)
 
-def future(cur_location):
+def future(cur_location, configuration):
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = cur_location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
@@ -42,7 +42,9 @@ def future(cur_location):
     except ApiException as e:
         print("Exception when calling APIsApi->future_weather: %s\n" % e)
 
-def history(cur_location):
+
+
+def history(cur_location, configuration):
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = cur_location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
@@ -58,7 +60,7 @@ def history(cur_location):
         print("Exception when calling APIsApi->history_weather: %s\n" % e)
 
 
-def forecast(cur_location):
+def forecast(cur_location, configuration):
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = cur_location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
@@ -83,6 +85,8 @@ def main():
     # Configure API key authorization: ApiKeyAuth
     configuration = swagger_client.Configuration()
     configuration.api_key['key'] = ''
+
+    forecast(cur_location, configuration)
 
 
 
