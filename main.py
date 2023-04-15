@@ -15,9 +15,11 @@ def search(configuration):
     try:
         # Search/Autocomplete API
         api_response = api_instance.search_autocomplete_weather(q)
-        data = api_response.to_dict()
-        with open('search.json', 'w') as f:
-            f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
+        #data = api_response.to_dict()
+        print(api_response)
+        print(type(api_response))
+        #with open('search.json', 'w') as f:
+        #    f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
         #pprint(api_response)
     except ApiException as e:
         print("Exception when calling APIsApi->search_autocomplete_weather: %s\n" % e)
@@ -60,7 +62,7 @@ def history(cur_location, configuration):
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = cur_location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
     dt = '2023-01-01' # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format
-    end_dt = '2023-04-13' # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format<br />'end_dt' should be greater than 'dt' parameter and difference should not be more than 30 days between the two dates.  (optional)
+    end_dt = '2023-01-30' # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format<br />'end_dt' should be greater than 'dt' parameter and difference should not be more than 30 days between the two dates.  (optional)
     hour = 12 # int | Must be in 24 hour. For example 5 pm should be hour=17, 6 am as hour=6  (optional)
 
     try:
@@ -102,9 +104,14 @@ def main():
     # Configure API key authorization: ApiKeyAuth
     configuration = swagger_client.Configuration()
     configuration.api_key['key'] = ''
-    
-    forecast(cur_location, configuration)
 
+    '''
+    forecast(cur_location, configuration)
+    history(cur_location, configuration)
+    future(cur_location, configuration)
+    real_time(cur_location, configuration)
+    search(configuration)
+    '''
 
 
 if __name__ == "__main__":
