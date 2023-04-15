@@ -1,7 +1,7 @@
 from __future__ import print_function
 from swagger_client.rest import ApiException
 from pprint import pprint
-import time, geocoder, swagger_client, json, flask, sqlite3
+import geocoder, swagger_client, json, flask, sqlite3, datetime
 
 
 # Configure API key authorization: ApiKeyAuth
@@ -12,6 +12,9 @@ configuration.api_key['key'] = ''
 g = geocoder.ip('me')
 cur_location = [str(x) for x in g.latlng]
 cur_location = ','.join(cur_location)
+
+# Time thing
+today = datetime.date.today()
 
 
 def search():
@@ -65,12 +68,19 @@ def future(location):
 
 
 
-def history(location):
+def history(location, date):
     # create an instance of the API class
+    date = datetime.datetime.strptime(date, '%Y-%m-%d').date()
+    if (date + datetime.timedelta(days=30)) > today:
+        date_end = today - datetime.timedelta(days=1)
+    else:
+        date_end = date + datetime.timedelta(days=30)
+    date = str(date)
+    date_end = str(date_end)
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
-    dt = '2023-01-01' # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format
-    end_dt = '2023-01-30' # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format<br />'end_dt' should be greater than 'dt' parameter and difference should not be more than 30 days between the two dates.  (optional)
+    dt = date # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format
+    end_dt = date_end # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format<br />'end_dt' should be greater than 'dt' parameter and difference should not be more than 30 days between the two dates.  (optional)
     hour = 12 # int | Must be in 24 hour. For example 5 pm should be hour=17, 6 am as hour=6  (optional)
 
     try:
@@ -112,11 +122,11 @@ def site():
         if flask.request.method == "POST":
             radio_choice = flask.request.form.get("radioChoice")
             if radio_choice == 'CurrentData':
-                print("Current")
+                real_time(cur_location)
             elif radio_choice == 'PastData':
-                print("Past")
+                history(cur_location, flask.request.form.get("WeatherDate"))
             elif radio_choice == 'Forecast':
-                print("Forecast")
+                forecast(cur_location)
             if (city_name:=flask.request.form['location']):
                 real_time(city_name)
         # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
