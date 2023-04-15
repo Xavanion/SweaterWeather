@@ -4,7 +4,12 @@ from pprint import pprint
 import time, geocoder, swagger_client, json, flask, sqlite3
 
 
-def search(configuration):
+# Configure API key authorization: ApiKeyAuth
+configuration = swagger_client.Configuration()
+configuration.api_key['key'] = ''
+
+
+def search():
     # create an instance of the API class
     location = input('Enter a place: ')
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
@@ -22,7 +27,7 @@ def search(configuration):
     except ApiException as e:
         print("Exception when calling APIsApi->search_autocomplete_weather: %s\n" % e)
 
-def real_time(cur_location, configuration):
+def real_time(cur_location):
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = cur_location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
@@ -37,7 +42,7 @@ def real_time(cur_location, configuration):
     except ApiException as e:
         print("Exception when calling APIsApi->realtime_weather: %s\n" % e)
 
-def future(cur_location, configuration):
+def future(cur_location):
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = cur_location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
@@ -55,7 +60,7 @@ def future(cur_location, configuration):
 
 
 
-def history(cur_location, configuration):
+def history(cur_location):
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = cur_location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
@@ -74,7 +79,7 @@ def history(cur_location, configuration):
         print("Exception when calling APIsApi->history_weather: %s\n" % e)
 
 
-def forecast(cur_location, configuration):
+def forecast(cur_location):
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = cur_location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
@@ -100,8 +105,8 @@ def site():
         # Takes form method post with name city and sets that equal to city name
         # Thinking of passing cityname to insert_record for sql database for later email list/recommendations
         if flask.request.method == "POST":
-            city_name = flask.request.form['city']
-            print(city_name)
+            city_name = flask.request.form['location']
+            real_time(city_name)
         # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
         return flask.render_template("index.html")
 
@@ -116,10 +121,6 @@ def main():
     cur_location = [str(x) for x in g.latlng]
     cur_location = ','.join(cur_location)
 
-    # Configure API key authorization: ApiKeyAuth
-    configuration = swagger_client.Configuration()
-    configuration.api_key['key'] = ''
-
     # Create SQL Datadase
     #conn = sqlite3.connect('email_database.db')
     #c = conn.cursor()
@@ -128,11 +129,11 @@ def main():
     site()
 
     '''
-    forecast(cur_location, configuration)
-    history(cur_location, configuration)
-    future(cur_location, configuration)
-    real_time(cur_location, configuration)
-    search(configuration)
+    forecast(cur_location)
+    history(cur_location)
+    future(cur_location)
+    real_time(cur_location)
+    search()
     '''
 
 
