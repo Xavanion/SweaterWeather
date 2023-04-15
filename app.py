@@ -113,7 +113,7 @@ def forecast(location):
 def site():
     # Make Flask App
     app = flask.Flask(__name__)
-    @app.route('/', methods=['GET', 'POST'])
+    @app.route('/', methods=['POST'])
     def index():
         # Takes form method post with name city and sets that equal to city name
         # Thinking of passing cityname to insert_record for sql database for later email list/recommendations
