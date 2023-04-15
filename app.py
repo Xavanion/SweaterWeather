@@ -110,6 +110,13 @@ def site():
         # Takes form method post with name city and sets that equal to city name
         # Thinking of passing cityname to insert_record for sql database for later email list/recommendations
         if flask.request.method == "POST":
+            radio_choice = flask.request.form.get("radioChoice")
+            if radio_choice == 'CurrentData':
+                print("Current")
+            elif radio_choice == 'PastData':
+                print("Past")
+            elif radio_choice == 'Forecast':
+                print("Forecast")
             if (city_name:=flask.request.form['location']):
                 real_time(city_name)
         # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
