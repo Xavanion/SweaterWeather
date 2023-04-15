@@ -8,25 +8,16 @@
 	</head>
 	<body>
 		<div class="container">
-			
-		</div>
-		<h1>This is Sweater Weather</h1>
-		<p>Sweater weather is an upcoming project designed by three KU students to
-			provide accessible weather data from 1978 to the current day.</p>
-		<div class="formSubmission">
+			<form action="" class="search-bar" method="post">
+				<input name="location" placeholder="Search for a city">
+				<button type="submit">
+					<img src="/static/assets/search.png" width="15" height="15" alt="Search">
+				</button>
+			</form> <br>
 			<form method="post">
 				<div class ="formBox">
-
-					<label for="location">Enter a Location: </label>
-					<input name="location" placeholder="e.g. Lawrence, KS">
-					<input type="submit" value="Search"><br><br>
-					  
-					<input type="radio" id="choice1" name="radioChoice" value="CurrentData" checked="checked">
-					<label for="choice1"> View current weather data</label><br>
-
-					<input type="radio" id="choice2" name="radioChoice" value="Forecast">
-					<label for="choice2"> View forecast</label><br>
-
+					<h1>This is Sweater Weather</h1> <br>
+					<p>Sweater weather is an upcoming project designed by three KU students to provide accessible weather data from 1978 to the current day.</p> <br>
 					<input type="radio" id="choice3" name="radioChoice" value="PastData">
 					<label for="choice3"> View past data</label><br>
 
@@ -45,9 +36,9 @@
 
 
 					<input type="submit" value="GO!" /> <br>
+				</div>	
 
-					
-				</div>
+			
 			</form>
 		</div>
 	</body>

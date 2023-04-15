@@ -99,11 +99,11 @@ def forecast(location):
     q = location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
     days = 7 # int | Number of days of weather forecast. Value ranges from 1 to 14
     dt = '2023-04-20' # date | Date should be between today and next 14 day in yyyy-MM-dd format. e.g. '2015-01-01'  (optional)
-    hour = 12 # int | Must be in 24 hour. For example 5 pm should be hour=17, 6 am as hour=6  (optional)
+    #hour = 12 # int | Must be in 24 hour. For example 5 pm should be hour=17, 6 am as hour=6  (optional)
 
     try:
         # Forecast API
-        api_response = api_instance.forecast_weather(q, days, dt=dt, hour=hour)
+        api_response = api_instance.forecast_weather(q, days, dt=dt)
         data = api_response.to_dict()
         with open('forecast.json', 'w') as f:
             f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
@@ -129,6 +129,7 @@ def site():
                 future(cur_location, flask.request.form.get("FutureDate"))
             if (city_name:=flask.request.form['location']):
                 real_time(city_name)
+                print("test")
         # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
         return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)))
 

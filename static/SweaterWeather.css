@@ -4,27 +4,62 @@ body {
 
 
 h1 {
-  color: navy;
+  color: rgb(0, 0, 0);
   margin: auto;
   text-align: center;
 }
 h2 {
   text-align: center;
-  color: navy;
+  color: rgb(0, 0, 0);
 }
 p {
   text-align: center;
-  color: navy;
+  color: rgb(0, 0, 0);
 }
 
 .container{
   width: 100%;
   min-height: 100vh;
-  padding: 5%;
-  background-image: linear-gradient(rgba(0,8,51,0.9), rgba(0,8,51,0.9), url(/assets/background.png));
+  padding: 0%;
+  background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.5)), url(/static/assets/background.png);
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cccccc;
 }
+
+.search-bar{
+  position: fixed;
+  top: 5%;
+  left: 30%;
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+button[type="submit"] {
+  background-color: #7d848b; /* Set background color */
+  border: none; /* Remove border */
+  color: white; /* Set text color */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Set display to inline-block */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+button[type="submit"] img {
+  margin-right: 5px; /* Add margin to the right of the image */
+}
+
+
 
 .formSubmission {
 background-color: rgb(170, 255, 177); 
@@ -41,7 +76,7 @@ line-height: 20px;
 }
 
 .formBox {
-  width: 600px; /* Can be in percentage also. */
+  width: 600px;
   height: auto;
   margin: 0 auto;
   padding: 0;
