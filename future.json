@@ -39,7 +39,7 @@
                 },
                 "hour": [
                     {
-                        "chance_of_rain": 62,
+                        "chance_of_rain": 83,
                         "chance_of_snow": 0,
                         "cloud": 49,
                         "condition": {
@@ -68,7 +68,7 @@
                         "uv": null,
                         "vis_km": 9,
                         "vis_miles": 5,
-                        "will_it_rain": 0,
+                        "will_it_rain": 1,
                         "will_it_snow": 0,
                         "wind_degree": 150,
                         "wind_dir": "SSE",
@@ -78,7 +78,7 @@
                         "windchill_f": 53.7
                     },
                     {
-                        "chance_of_rain": 76,
+                        "chance_of_rain": 84,
                         "chance_of_snow": 0,
                         "cloud": 52,
                         "condition": {
@@ -117,7 +117,7 @@
                         "windchill_f": 51.3
                     },
                     {
-                        "chance_of_rain": 65,
+                        "chance_of_rain": 79,
                         "chance_of_snow": 0,
                         "cloud": 61,
                         "condition": {
@@ -146,7 +146,7 @@
                         "uv": null,
                         "vis_km": 8,
                         "vis_miles": 5,
-                        "will_it_rain": 0,
+                        "will_it_rain": 1,
                         "will_it_snow": 0,
                         "wind_degree": 154,
                         "wind_dir": "SSE",
@@ -156,7 +156,7 @@
                         "windchill_f": 49.8
                     },
                     {
-                        "chance_of_rain": 69,
+                        "chance_of_rain": 61,
                         "chance_of_snow": 0,
                         "cloud": 52,
                         "condition": {
@@ -195,7 +195,7 @@
                         "windchill_f": 58.0
                     },
                     {
-                        "chance_of_rain": 85,
+                        "chance_of_rain": 89,
                         "chance_of_snow": 0,
                         "cloud": 49,
                         "condition": {
@@ -234,7 +234,7 @@
                         "windchill_f": 64.0
                     },
                     {
-                        "chance_of_rain": 87,
+                        "chance_of_rain": 67,
                         "chance_of_snow": 0,
                         "cloud": 55,
                         "condition": {
@@ -263,7 +263,7 @@
                         "uv": null,
                         "vis_km": 8,
                         "vis_miles": 5,
-                        "will_it_rain": 1,
+                        "will_it_rain": 0,
                         "will_it_snow": 0,
                         "wind_degree": 182,
                         "wind_dir": "S",
@@ -273,7 +273,7 @@
                         "windchill_f": 66.4
                     },
                     {
-                        "chance_of_rain": 66,
+                        "chance_of_rain": 69,
                         "chance_of_snow": 0,
                         "cloud": 40,
                         "condition": {
@@ -312,7 +312,7 @@
                         "windchill_f": 63.6
                     },
                     {
-                        "chance_of_rain": 89,
+                        "chance_of_rain": 81,
                         "chance_of_snow": 0,
                         "cloud": 36,
                         "condition": {
@@ -357,8 +357,8 @@
     "location": {
         "country": "United States of America",
         "lat": 39.03,
-        "localtime": "2023-04-15 16:47",
-        "localtime_epoch": 1681595265,
+        "localtime": "2023-04-15 17:02",
+        "localtime_epoch": 1681596174,
         "lon": -95.21,
         "name": "Lawrence",
         "region": "Kansas",
