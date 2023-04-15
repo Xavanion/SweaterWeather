@@ -18,7 +18,7 @@ p {
 
 .formSubmission {
 background-color: rgb(170, 255, 177); 
-height: 200px;
+height: 310px;
 width: 600px;
 margin: auto;
 padding-top: 15px;
@@ -59,4 +59,9 @@ input[type=date] {
   text-decoration: none;
   margin: 4px 2px;
   text-align: center;
+}
+input[name=location] {
+  background-color: rgb(243, 254, 255); 
+  width: 150px;
+  border-color: #04AA6D;
 }

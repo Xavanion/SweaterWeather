@@ -13,26 +13,26 @@
 		<div class="formSubmission">
 			<form method="post">
 				<div class ="formBox">
+
+					<label for="location">Enter a Location: </label>
+					<input name="location" placeholder="e.g. Lawrence, KS">
+					<input type="submit" value="Search"><br><br>
 					  
-					<input type="radio" id="choice1" name="radioChoice" value="CurrentData">
+					<input type="radio" id="choice1" name="radioChoice" value="CurrentData" checked="checked">
 					<label for="choice1"> View current weather data</label><br>
 
+					<input type="radio" id="choice3" name="radioChoice" value="Forecast">
+					<label for="choice3"> View forecast</label><br>
+
 					<input type="radio" id="choice2" name="radioChoice" value="PastData">
-					<label for="choice2"> View past data</label><br>
+					<label for="choice2"> View past data</label><br><br>
 
 					<label for="start">Please choose the date if checking past weather data: </label>
 					<input type="date" id="WeatherDate" name="WeatherDate"
 						value="2023-04-15"
 						min="1978-01-01" max="2023-04-15"><br>
 
-					<input type="radio" id="choice3" name="radioChoice" value="Forecast">
-					<label for="choice3"> View forecast</label><br>
-					<input type="submit" value="GO!" /> <br> <br>
-
-					<label for="location">Enter a Location: </label>
-					<input name="location">
-					<input type="submit" value="Search">
-
+					
 				</div>
 			</form>
 		</div>
