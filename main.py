@@ -11,12 +11,12 @@ def search():
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
 
-try:
-    # Search/Autocomplete API
-    api_response = api_instance.search_autocomplete_weather(q)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling APIsApi->search_autocomplete_weather: %s\n" % e)
+    try:
+        # Search/Autocomplete API
+        api_response = api_instance.search_autocomplete_weather(q)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling APIsApi->search_autocomplete_weather: %s\n" % e)
 
 def real_time(cur_location):
     # create an instance of the API class
