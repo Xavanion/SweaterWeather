@@ -106,9 +106,6 @@ def site():
         return flask.render_template("index.html")
 
 
-    def insert_record(city_name):
-        # Maybe take city_name from index and insert into sql here?
-        pass
 
     app.run(debug=True)
 
@@ -122,6 +119,11 @@ def main():
     # Configure API key authorization: ApiKeyAuth
     configuration = swagger_client.Configuration()
     configuration.api_key['key'] = ''
+
+    # Create SQL Datadase
+    conn = sqlite3.connect('email_database.db')
+    c = conn.cursor()
+    c.execute("""CREATE TABLE emails""")
 
     site()
 
