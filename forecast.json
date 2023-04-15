@@ -1,0 +1,125 @@
+{
+    "alerts": null,
+    "current": {
+        "air_quality": null,
+        "cloud": 100,
+        "condition": {
+            "code": 1009,
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+            "text": "Overcast"
+        },
+        "feelslike_c": 13,
+        "feelslike_f": 57.1,
+        "gust_kph": 11.5,
+        "gust_mph": 7.2,
+        "humidity": 83,
+        "is_day": 0,
+        "last_updated": "2023-04-15 02:30",
+        "last_updated_epoch": 1681543800,
+        "precip_in": 0,
+        "precip_mm": 1,
+        "pressure_in": 29.74,
+        "pressure_mb": 1007,
+        "temp_c": 13.9,
+        "temp_f": 57.0,
+        "uv": 1,
+        "vis_km": 16,
+        "vis_miles": 9,
+        "wind_degree": 50,
+        "wind_dir": "NE",
+        "wind_kph": 19.1,
+        "wind_mph": 11.9
+    },
+    "forecast": {
+        "forecastday": [
+            {
+                "_date": "2023-04-20",
+                "astro": {
+                    "moon_illumination": "0",
+                    "moon_phase": "New Moon",
+                    "moonrise": "06:53 AM",
+                    "moonset": "08:57 PM",
+                    "sunrise": "06:37 AM",
+                    "sunset": "08:03 PM"
+                },
+                "date_epoch": 1681948800,
+                "day": {
+                    "avghumidity": 83,
+                    "avgtemp_c": 15.8,
+                    "avgtemp_f": 60.5,
+                    "avgvis_km": 7,
+                    "avgvis_miles": 4,
+                    "condition": {
+                        "code": 1063,
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+                        "text": "Patchy rain possible"
+                    },
+                    "daily_chance_of_rain": 66,
+                    "daily_chance_of_snow": 0,
+                    "daily_will_it_rain": 0,
+                    "daily_will_it_snow": 0,
+                    "maxtemp_c": 18.3,
+                    "maxtemp_f": 64.9,
+                    "maxwind_kph": 25.2,
+                    "maxwind_mph": 15.7,
+                    "mintemp_c": 12.9,
+                    "mintemp_f": 55.2,
+                    "totalprecip_in": 0,
+                    "totalprecip_mm": 3,
+                    "uv": 4
+                },
+                "hour": [
+                    {
+                        "chance_of_rain": 3,
+                        "chance_of_snow": 0,
+                        "cloud": 100,
+                        "condition": {
+                            "code": 1240,
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/353.png",
+                            "text": "Light rain shower"
+                        },
+                        "dewpoint_c": 13.0,
+                        "dewpoint_f": 55.4,
+                        "feelslike_c": 12.8,
+                        "feelslike_f": 55.0,
+                        "gust_kph": 21.2,
+                        "gust_mph": 13,
+                        "heatindex_c": 13.9,
+                        "heatindex_f": 57.0,
+                        "humidity": 95,
+                        "is_day": 1,
+                        "precip_in": 0,
+                        "precip_mm": 0,
+                        "pressure_in": 29.73,
+                        "pressure_mb": 1007,
+                        "temp_c": 13.9,
+                        "temp_f": 57.0,
+                        "time": "2023-04-20 12:00",
+                        "time_epoch": 1682010000,
+                        "uv": 3,
+                        "vis_km": 9,
+                        "vis_miles": 5,
+                        "will_it_rain": 0,
+                        "will_it_snow": 0,
+                        "wind_degree": 21,
+                        "wind_dir": "NNE",
+                        "wind_kph": 15.8,
+                        "wind_mph": 9.8,
+                        "windchill_c": 12.8,
+                        "windchill_f": 55.0
+                    }
+                ]
+            }
+        ]
+    },
+    "location": {
+        "country": "United States of America",
+        "lat": 39.03,
+        "localtime": "2023-04-15 2:39",
+        "localtime_epoch": 1681544353,
+        "lon": -95.21,
+        "name": "Lawrence",
+        "region": "Kansas",
+        "tz_id": "America/Chicago"
+    }
+}
