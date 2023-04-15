@@ -65,7 +65,7 @@ def forecast(cur_location, configuration):
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
     q = cur_location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
     days = 7 # int | Number of days of weather forecast. Value ranges from 1 to 14
-    dt = '2023-06-20' # date | Date should be between today and next 14 day in yyyy-MM-dd format. e.g. '2015-01-01'  (optional)
+    dt = '2023-04-20' # date | Date should be between today and next 14 day in yyyy-MM-dd format. e.g. '2015-01-01'  (optional)
     hour = 12 # int | Must be in 24 hour. For example 5 pm should be hour=17, 6 am as hour=6  (optional)
 
     try:
