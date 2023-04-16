@@ -114,7 +114,7 @@ def site():
     app = flask.Flask(__name__)
     location = cur_location
     @app.route('/', methods=['GET', 'POST'])
-    def index():
+    def index(location):
         # Takes form method post with name city and sets that equal to city name
         # Thinking of passing cityname to insert_record for sql database for later email list/recommendations
         if flask.request.method == "POST":
@@ -140,8 +140,11 @@ def main():
     #conn = sqlite3.connect('email_database.db')
     #c = conn.cursor()
     #c.execute("""CREATE TABLE emails()""")
+    reader = Read('real_time.json')
+    real_time_data = reader.run()
+    print(real_time_data['temperature']['temp'])
 
-    site()
+    #site()
 
 
 if __name__ == "__main__":
