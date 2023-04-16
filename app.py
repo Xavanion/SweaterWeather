@@ -140,9 +140,25 @@ def index():
         elif (city_name:=flask.request.form['location']):
             location = city_name
             real_time(city_name)
-        # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
+    # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
+    # DISPLAY ONLY REAL TIME
     return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)),
                                  current_temp = "15", feels_temp = "20")
+
+# View past history of location
+@app.route('/past_history', methods=['GET', 'POST'])
+def past_history(location):
+    pass
+
+# Viewing Future Data for a given location
+@app.route('/future_history', methods=['GET', 'POST'])
+def future_history(location):
+    pass
+
+# View Hourly forecast for a location
+@app.route('/forecast', methods=['GET', 'POST'])
+def forecast_call(location):
+    pass
 
 
 
