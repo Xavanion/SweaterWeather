@@ -26,11 +26,16 @@ class Read:
 
             dayinfo = {}
             dayinfo['date'] = date
+<<<<<<< Updated upstream
             dayinfo['temperature'] = tempinfo
+=======
+            dayinfo['temperatures'] = tempinfo
+>>>>>>> Stashed changes
             dayinfo['condition'] = conditioninfo
 
             monthly_data[f'Day {i}'] = dayinfo
             i += 1
+<<<<<<< Updated upstream
         return monthly_data
 
     def realtime(self):
@@ -53,13 +58,23 @@ class Read:
         realtimedata['temperature'] = tempinfo
 
         print(realtimedata)
+=======
+        return monthly_data     
+        
+>>>>>>> Stashed changes
 
     def run(self):
         global json_data
         with open(self.file) as f:
             json_data = json.load(f)
+<<<<<<< Updated upstream
         self.realtime()
 
 read_stuff = Read('real_time.json')
+=======
+        
+
+read_stuff = Read('history.json')
+>>>>>>> Stashed changes
 
 read_stuff.run()
