@@ -95,7 +95,45 @@ class Read:
             daily_forecast[f'time_interval{i}'] = hourinfo
             i += 1
         return daily_forecast
-        
+    
+    def future(self):
+        daily_forecast = {}
+        alldayforecast = json_data['forecast']['forecastday'][0]['hour']
+        date = json_data['forecast']['forecastday'][0]['_date']
+
+        location_data = {}
+        location_data['country'] = json_data['location']['country']
+        location_data['city'] = json_data['location']['name']
+        daily_forecast['location'] = location_data
+
+        i = 1
+        for hourlydata in alldayforecast:
+            time = str(hourlydata['time'][11:])
+
+            hourinfo = {}
+
+            dateinfo = {}
+            dateinfo['date'] = date
+            dateinfo['time'] = time
+            hourinfo['date_and_time'] = dateinfo
+
+            info = {}
+            info['temperature'] = hourlydata['temp_f']
+            info['feelslike'] = hourlydata['feelslike_f']
+            info['wind_speed'] = hourlydata['wind_mph']
+            info['chance_of_rain'] = hourlydata['chance_of_rain']
+            info['chance_of_snow'] = hourlydata['chance_of_snow']
+
+            
+            conditioninfo = {}
+            conditioninfo['icon'] = hourlydata['condition']['icon']
+            conditioninfo['condition'] = hourlydata['condition']['text']
+
+            hourinfo['info'] = info
+            hourinfo['conditioninfo'] = conditioninfo
+            daily_forecast[f'time_interval{i}'] = hourinfo
+            i += 1
+        return daily_forecast
 
     def run(self):
         global json_data
@@ -104,5 +142,5 @@ class Read:
         #print(self.forecast())
 
 
-read_stuff = Read('forecast.json')
+read_stuff = Read('future.json')
 read_stuff.run()
