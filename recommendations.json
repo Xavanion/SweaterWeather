@@ -1,161 +1,7 @@
 {
    "html_attributions" : [],
-   "next_page_token" : "AUjq9jmIAvqoNk3IEDuIZn7_0NwWwIOMRG7fRNSWb8r86mci2flaRKM_Xew0ma_37WWxllysnmJbS82zLYOiPFxwHhQPo5bLAUawpcOzxx84g_KkcUw8yFbxfx47-cyDNPQwHff4BhFp-5iAvNrkcmxeqAvyan--c_ayoxhnUaZXdgKhyUIJfG1ZDlU77e8WRsXosTtJmKZ9qcefgjkKUBUTlZZIrNwbx1CbelhwDtmL3j8FxShLF6C7zbNBCawknqKWUBKs6l2ffMRBJw9SXn737MTdgjPq-p0MkLYFxqynpmBBpGyVtei7iY5Nromo_O7iig97co7dk5MjPgEDBAdnc9MtVg1KNeDX5UA7cOD4iFnh6TWlenV-R6Q268I56rnYXHixnRSisbD4936YTGdKMAuENuur1r6T6BN7nHB74cNMJfKdlcXEmG64f4TqJDGUUQbGH0TXDlRY",
+   "next_page_token" : "AUjq9jmXs2fv4laE3VRr6TH7APJS9VF0o3mNXCqQo9MWYKNGZYy2SjkCGASH7xsxbw2feJQQmN7KCMjp7W2fU6g5Bot8TSrLPB40O3tAw3AM_kNrKlHm8r3I_TmHuUMo1dgXqO2gainMF9a5R4ys8D2XK9RfCtcRVv9izuR0MXLlYiLBjlJNlkd5ONepCPqTNjGy_qMX4V2nNkGHewxxrgatKRjxc-nJyLbKOxpnEPcgs5z9mL4901zukoOkIkAXJsnpRmi3D0gFHQviPeQ1Mcn7fhnbIBZhc5SG3Ckv3hLNubAjpcXamN8y1P3nCTsAiU_iTfIp3X1Zg57sP_fEhN3t6Vf-wfAzX-tD1xtAyBCb7MhGoyQYERHZVEkuYDuaxhwqy-0TBx40WzwR1muoTapIVBporEb1-qfDVeDynDWKik-ZOpoC1i8rZ7mR7vjNm5EI1gl-gFHaV-Rw",
    "results" : [
-      {
-         "business_status" : "OPERATIONAL",
-         "formatted_address" : "1004 Massachusetts St, Lawrence, KS 66044, United States",
-         "geometry" : {
-            "location" : {
-               "lat" : 38.9653744,
-               "lng" : -95.2356923
-            },
-            "viewport" : {
-               "northeast" : {
-                  "lat" : 38.96668782989272,
-                  "lng" : -95.23444742010729
-               },
-               "southwest" : {
-                  "lat" : 38.96398817010728,
-                  "lng" : -95.23714707989274
-               }
-            }
-         },
-         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-         "icon_background_color" : "#FF9E67",
-         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-         "name" : "Pizza Tascio Lawrence",
-         "opening_hours" : {
-            "open_now" : true
-         },
-         "photos" : [
-            {
-               "height" : 1365,
-               "html_attributions" : [
-                  "\u003ca href=\"https://maps.google.com/maps/contrib/114753073504878726089\"\u003eA Google User\u003c/a\u003e"
-               ],
-               "photo_reference" : "AUjq9jkThsUVI0cDk8g2flGHa7MzrMgauAOmIcO1dDhdoZx_FI3KXA_AIY2FPYZaBxHgxt0U8eXsxxEaYbPiAzenpGiaTzdY4oXyJk7uVIZDKVzlFL01JBmb4_rwGMZqkm7n3MhWa8hnETqPmdQBc3QZVqzoRGkeOKGoQ8T4ynm-1mWXtkNj",
-               "width" : 2048
-            }
-         ],
-         "place_id" : "ChIJkcOOfAlvv4cRdLFtziJwrHU",
-         "plus_code" : {
-            "compound_code" : "XQ87+4P Lawrence, Kansas",
-            "global_code" : "86C6XQ87+4P"
-         },
-         "rating" : 4.3,
-         "reference" : "ChIJkcOOfAlvv4cRdLFtziJwrHU",
-         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
-         "user_ratings_total" : 57
-      },
-      {
-         "business_status" : "OPERATIONAL",
-         "formatted_address" : "818 Massachusetts St, Lawrence, KS 66044, United States",
-         "geometry" : {
-            "location" : {
-               "lat" : 38.9686961,
-               "lng" : -95.23558960000001
-            },
-            "viewport" : {
-               "northeast" : {
-                  "lat" : 38.97000332989272,
-                  "lng" : -95.23410487010729
-               },
-               "southwest" : {
-                  "lat" : 38.96730367010728,
-                  "lng" : -95.23680452989274
-               }
-            }
-         },
-         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-         "icon_background_color" : "#FF9E67",
-         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-         "name" : "Pickleman's Gourmet Cafe",
-         "opening_hours" : {
-            "open_now" : true
-         },
-         "photos" : [
-            {
-               "height" : 775,
-               "html_attributions" : [
-                  "\u003ca href=\"https://maps.google.com/maps/contrib/111917444189091573045\"\u003ePickleman&#39;s Gourmet Cafe\u003c/a\u003e"
-               ],
-               "photo_reference" : "AUjq9jnd_Cpb4uIrSstS5fTTpmyXpqvN7z5C9VUYJfbRC-LmrnC04Juv7uYkLUZCuosvZXHg6s_E3kihq0UYcMMmP-P0jJB_MpXsX9yiaeB79GCrUvItISIeZpy5I8AYCWBdaL3eDc0_7RN3qgro5XpQEKnZ0xG6bzZGPai5LrZ8glqCsVN2",
-               "width" : 1172
-            }
-         ],
-         "place_id" : "ChIJw99pQltvv4cRHj_B0eRJ9bs",
-         "plus_code" : {
-            "compound_code" : "XQ97+FQ Lawrence, Kansas",
-            "global_code" : "86C6XQ97+FQ"
-         },
-         "price_level" : 1,
-         "rating" : 4.4,
-         "reference" : "ChIJw99pQltvv4cRHj_B0eRJ9bs",
-         "types" : [
-            "cafe",
-            "restaurant",
-            "food",
-            "store",
-            "point_of_interest",
-            "establishment"
-         ],
-         "user_ratings_total" : 599
-      },
-      {
-         "business_status" : "OPERATIONAL",
-         "formatted_address" : "1100 Mississippi St, Lawrence, KS 66044, United States",
-         "geometry" : {
-            "location" : {
-               "lat" : 38.963488,
-               "lng" : -95.243809
-            },
-            "viewport" : {
-               "northeast" : {
-                  "lat" : 38.96482477989272,
-                  "lng" : -95.24259287010729
-               },
-               "southwest" : {
-                  "lat" : 38.96212512010727,
-                  "lng" : -95.24529252989272
-               }
-            }
-         },
-         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-         "icon_background_color" : "#FF9E67",
-         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-         "name" : "Toppers Pizza",
-         "opening_hours" : {
-            "open_now" : true
-         },
-         "photos" : [
-            {
-               "height" : 3024,
-               "html_attributions" : [
-                  "\u003ca href=\"https://maps.google.com/maps/contrib/118018466800358589039\"\u003eShari Portenier\u003c/a\u003e"
-               ],
-               "photo_reference" : "AUjq9jnNom1_Qjn2nyWX5opTEQTspK-TY9uaz1mC8kBhERy8uS0nT5ZksCE56Dw7peMA8eUF1AqSTS2SfG872kDNl6PZKOufwlpeQ-_lZ1vNqFadi4M4EA0cuE_WRd7tmsmrzsKHQtCLy4NlC--It8GSBDVneGsPIt8mKU58aFBJ-B6BeZ24",
-               "width" : 4032
-            }
-         ],
-         "place_id" : "ChIJdSYmn0hvv4cRGseWT3IhZms",
-         "plus_code" : {
-            "compound_code" : "XQ74+9F Lawrence, Kansas",
-            "global_code" : "86C6XQ74+9F"
-         },
-         "price_level" : 2,
-         "rating" : 4.7,
-         "reference" : "ChIJdSYmn0hvv4cRGseWT3IhZms",
-         "types" : [
-            "meal_takeaway",
-            "meal_delivery",
-            "restaurant",
-            "food",
-            "point_of_interest",
-            "establishment"
-         ],
-         "user_ratings_total" : 469
-      },
       {
          "business_status" : "OPERATIONAL",
          "formatted_address" : "837 Massachusetts St, Lawrence, KS 66044, United States",
@@ -188,7 +34,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/117668838564646386982\"\u003eNick\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jmZSxF7_SpE6LkDUPrtYnHnwj3FtzuiKVlbPVAF8e3YGsG2smVM9UW6GqM1Os4FAYFb0cLa8BtwDIM5aFkALI7Uw91fBQgIZGnFd3T-cOBA71cZ136I9X-3fHgyIA-0VNzWswjt7KK4E4eW3RQxduFgezsK1WjbbwqCKzOacXtTgwXw",
+               "photo_reference" : "AUjq9jnr9_ft5NgCP5VXCHcvuMnv_qQSGjHfue8CdV0muAmUzHZGYEsqAKMtNQZk6kVITG3L8NZm3jRJwyFnVCNOhSTre5wl_AngmSmIlU5RvSao2GDOSGUIOQu4yjFMY6zMRR1ckkTWbiTh5yMF_Uhrx1aYPvK4bcK4ZVKZvlN8WF6UmKQ_",
                "width" : 4032
             }
          ],
@@ -235,7 +81,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/101069847051153209919\"\u003eBinh Bui\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jl2oRD5Ta67fBan_hJLyqgL-u2AzOC9gFZOk2__0b3vcB07HyMe3iswHCFZzlBOQanVzTRebJgBzGjpktkV1QB7c8R6xLn_oAvjVsLJKI6jaaneOtxJhpg_iz3DL1O97GIrP3Oh-3R7IZHTNkXIZzBNQum8yP3YHi2gtgeTszqwefJT",
+               "photo_reference" : "AUjq9jlWEnSO1_xVEbQ0VeAogWi5UhyE3T9WLcwA-MYtqmdgK5Tz6NIn2aGe9WK_laU_OsBzZv63CefZnwi__TYS6Mu-s1_vaGR1mJV9eSwBVPfO6SH6O8NqqoUlslr4ofZ8oZ3A_EO--qWptCcfqYOQUXycmah3lmYmtUEMi9l9IGnC3Qdq",
                "width" : 4032
             }
          ],
@@ -282,7 +128,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/118060917169760222489\"\u003eTony Sutton\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jmY9qX3cmKHwjV000l4-EQNLncu39APLWG2kZVXgX5pmCt7WrDu9NXyGnJO0L0rSm83Y3D9e7TGYmcj-xkNYa-SWskCPt4J9lJ7KEboRO7ov61DHdg2uH6bfctN4X4hISfd-91MqjN6Zu8pMmdUaEUnJ3AEepEE9d2xoe3R-zvplDiT",
+               "photo_reference" : "AUjq9jlRr-yzgFJC666QYmoODpNbqk4x0WOhw5Db5bxy18xeQMpISEzpjrXudU-7017gqYlRGjPWmNuJ2a8SpeHFBs_-qng8bK08VdhCETaSDc_zBt0oqNhaHTp6vnoz_uFFK9VNDrwhyzeYA_RvR-7sC0eqnB5HKdj8Z_lKf4SeGURTko4J",
                "width" : 3984
             }
          ],
@@ -336,7 +182,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/106940116323519999669\"\u003ePapa John&#39;s Pizza\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jkS-Vjmd_LVjNN5pPoGACrgdNyaYd4luXox0bcC9LD-HguF8_loFCR9hikdrirotDDu-2OM1euayFhPMIlrHD5dvSU6rcJAEd4LEaxm_g8nZDJ-9iYnepWPBkpf5mBzjGcqBR47ym4mkbG8gj4rVa5elGZRGt6um9twIAE6_oMqQvp-",
+               "photo_reference" : "AUjq9jkGBAX9pUA54MUWZkhpQNCWK-ckvozc9lhgFFuieZsY9XFFF_jTK4njVVGyhjOJNz_ZdJfCjIFVi8qCoVSoTvWCR5J1HX1T2_SWf2-QtTkjcZPfF7roSfd5gOl1PK1wXwAUi4-4Y-k0R-2FtBweO4j56T4Zq6_YDm-6Rrql4fKG-zWU",
                "width" : 6027
             }
          ],
@@ -383,7 +229,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/100085971885194635861\"\u003eTim Miller\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jl3phS5Sm8XlH_4RMMsTO_uvQsj-hiigMaLphVlPnrR_ZGt4h4Yi-oiiz0aKnZOwONDyr0Dz9-5PQ44xFcM0dRmYxvwZWs39-fJmz2JytcKjTrMTJH9VfT2fKNcLiC5Mu2tg6gKWbAG13rsQF_rtL-fJ33Zl80s0HcOVyfQo8jk_t8-",
+               "photo_reference" : "AUjq9jmjwmmOfC3oGk4YcclOLqDI0nRggbfyA_c8C8oWFmEoK3F-bez9V15lwjtecR9WiJe5o-Xa73s9FMFtVTCWd5GuY3Tz27fR6MdOMeIfJkhzwiHEM0jZp8gfR8xCwve1VmYW9dBI2G4hDPeLieecunJKUsx7ewrUloQO42H2-An36iy2",
                "width" : 5248
             }
          ],
@@ -397,6 +243,52 @@
          "reference" : "ChIJO-fqQltvv4cR7s8kn2rWZ4A",
          "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
          "user_ratings_total" : 826
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "1004 Massachusetts St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9653744,
+               "lng" : -95.2356923
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96668782989272,
+                  "lng" : -95.23444742010729
+               },
+               "southwest" : {
+                  "lat" : 38.96398817010728,
+                  "lng" : -95.23714707989274
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Pizza Tascio Lawrence",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1365,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/114753073504878726089\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jmR94Zk3eUJKlHcjV-TpGgrgVVvfddK6i01eDfpXD6TISDCUcXtxvM7DRiiY4nUnnIKJr5XVA2QTiqJI-7spnsaAn0pK0F8gOKbub3kCzy2vxPHf7k25p1mDpwqRrkmKFX9daNsuWNaOlYyeOyyT3uEYrGnuLRbDFqbDkjjT88jgph0",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJkcOOfAlvv4cRdLFtziJwrHU",
+         "plus_code" : {
+            "compound_code" : "XQ87+4P Lawrence, Kansas",
+            "global_code" : "86C6XQ87+4P"
+         },
+         "rating" : 4.3,
+         "reference" : "ChIJkcOOfAlvv4cRdLFtziJwrHU",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 57
       },
       {
          "business_status" : "OPERATIONAL",
@@ -430,7 +322,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/118256430000049052091\"\u003eChris Lorenzen\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jlas0CkzlYDL46NRchKIsk1y_3Y05hlcuQRDnQpKt-yoaEZFRbecoZhG-cAlQxJl0YB_wRGLA9xf4eDtjxCrua1VFKMLda4ywx3ltKEq9rm3edO9hYAHKyOpqcWZwnPilxAzrnF_qF8sACT46KRQAuEdyuMDCngdo_JtX4krASvW7Xs",
+               "photo_reference" : "AUjq9jl6eIMn7bjqDzI4iP2NNPWiHs1y_76HIyY9x1Ucty0qY8KqGqMOGfCZv865dSiUGvbZFM_ITy6x0VtMpDUrg6qDmuhWQdkuvkgvmGYorP90N8JXgNaMnD7ehf7PKX-pYsx4th4s7-sN-83rqMJRNDam3I1BfGnUy3hIYTbH3g-7jn4a",
                "width" : 3840
             }
          ],
@@ -444,6 +336,114 @@
          "reference" : "ChIJp7xWZZ1vv4cR5UMWQfOGd8s",
          "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
          "user_ratings_total" : 346
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "818 Massachusetts St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9686961,
+               "lng" : -95.23558960000001
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.97000332989272,
+                  "lng" : -95.23410487010729
+               },
+               "southwest" : {
+                  "lat" : 38.96730367010728,
+                  "lng" : -95.23680452989274
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Pickleman's Gourmet Cafe",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 775,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111917444189091573045\"\u003ePickleman&#39;s Gourmet Cafe\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jmZHUZt2laIduWzaBG0O52ZZLW3kJYfO5vkIMuN1tDr5_Q_KVkWEEAjBGP_rveA-zebHlwXyPPy5cc2Y-ybjCW1xawK54yzsPtQT4Cxp1UbKhpAuxr2dI6R6Ckmh_MxDM5oUh8N8OS72_K20n81OG5KbsuvY7a0v8vkTt0uwFVlpTyS",
+               "width" : 1172
+            }
+         ],
+         "place_id" : "ChIJw99pQltvv4cRHj_B0eRJ9bs",
+         "plus_code" : {
+            "compound_code" : "XQ97+FQ Lawrence, Kansas",
+            "global_code" : "86C6XQ97+FQ"
+         },
+         "price_level" : 1,
+         "rating" : 4.4,
+         "reference" : "ChIJw99pQltvv4cRHj_B0eRJ9bs",
+         "types" : [
+            "cafe",
+            "restaurant",
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 599
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "1100 Mississippi St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.963488,
+               "lng" : -95.243809
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96482477989272,
+                  "lng" : -95.24259287010729
+               },
+               "southwest" : {
+                  "lat" : 38.96212512010727,
+                  "lng" : -95.24529252989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Toppers Pizza",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/118018466800358589039\"\u003eShari Portenier\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jmx5x6xo6MnDrP8q7v7vcawZXALudKM3NN3cyGdtoynzo4Og8kzD5mmGUf81TIXBIUCs5MgZ4LVh92X2DsoNpqfPab0jCoMl4I6l9OKhDykGskGK6Y638xgkAomUImY2lZrJ83PA0LBXbS71r8lRNn2XvYroxeTr8ZOMPscUcMop2kv",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJdSYmn0hvv4cRGseWT3IhZms",
+         "plus_code" : {
+            "compound_code" : "XQ74+9F Lawrence, Kansas",
+            "global_code" : "86C6XQ74+9F"
+         },
+         "price_level" : 2,
+         "rating" : 4.7,
+         "reference" : "ChIJdSYmn0hvv4cRGseWT3IhZms",
+         "types" : [
+            "meal_takeaway",
+            "meal_delivery",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 469
       },
       {
          "business_status" : "OPERATIONAL",
@@ -477,7 +477,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/114847554661145085738\"\u003eChan\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jnaVLZTrLZDqj2w9UrUBLLw3mKdlq1l_ToMZw5uRrDJEFBk1yfsIgkimUNg65lIJzXfBthw28JJ6mRgFDRjK4lRC-QRMwioCwEaCfNklrxSjjs-ZFy4kMxar_kgHMdEwuSCZrhOE0EDKs5bA1u-kD_Pf4h9oEdYKQsL889_KT5w8vQN",
+               "photo_reference" : "AUjq9jnG1BR4x9CEhU0Y5DEeGJsh4phHLJnFX9tzNrO17F7hgXUzfY0vmgnwHesBJCEKErEdAPJfDQ-4V9hyU5sSoIAJRmO3XcntGVc30r0je9CdIxdScof2wqrNlgzYqMwMwJ8yaYxrvOp3kMbQF5N-ZTIRUGUNAQW7upZtaq5j8MmEscQ1",
                "width" : 2487
             }
          ],
@@ -496,53 +496,6 @@
             "establishment"
          ],
          "user_ratings_total" : 19
-      },
-      {
-         "business_status" : "OPERATIONAL",
-         "formatted_address" : "900 Illinois St, Lawrence, KS 66044, United States",
-         "geometry" : {
-            "location" : {
-               "lat" : 38.9672877,
-               "lng" : -95.2449515
-            },
-            "viewport" : {
-               "northeast" : {
-                  "lat" : 38.96863737989272,
-                  "lng" : -95.24373667010728
-               },
-               "southwest" : {
-                  "lat" : 38.96593772010728,
-                  "lng" : -95.24643632989273
-               }
-            }
-         },
-         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-         "icon_background_color" : "#FF9E67",
-         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-         "name" : "Burrito King",
-         "opening_hours" : {
-            "open_now" : true
-         },
-         "photos" : [
-            {
-               "height" : 3024,
-               "html_attributions" : [
-                  "\u003ca href=\"https://maps.google.com/maps/contrib/116431745621029673792\"\u003eDaniel Fogel\u003c/a\u003e"
-               ],
-               "photo_reference" : "AUjq9jk_DI9OWnhyUM65mGS8gsKQ2WQeNFYnYbGMjb4nuINdRTwJuXZ2j3MrHjeC2-zjba3ybyr1uraMxt_PFnMsedfoZnPrwUQF_XivFx_SVFS4pcG25JSutGn_MnOWCAfQ-tVZgeYw6kv6OPtTT0sCta-pXcrKtlqur8vNZXa8VeuTT9DB",
-               "width" : 4032
-            }
-         ],
-         "place_id" : "ChIJtYqJ4kZvv4cRbxU9T3r46CU",
-         "plus_code" : {
-            "compound_code" : "XQ84+W2 Lawrence, Kansas",
-            "global_code" : "86C6XQ84+W2"
-         },
-         "price_level" : 1,
-         "rating" : 4.3,
-         "reference" : "ChIJtYqJ4kZvv4cRbxU9T3r46CU",
-         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
-         "user_ratings_total" : 1238
       },
       {
          "business_status" : "OPERATIONAL",
@@ -576,7 +529,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/102153388392638569569\"\u003eJames FitzSimmons\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jkmtMywZ7l6kIM7iRVg7As9QdqU2r881wjyzWkroMNQAmwjMEaP99xT36XMP_isjdfHqYQwIwOIZJLr5kOW0CArq0AgzHvlMh5i6kdktjb-hlE5mXGyIm3Xc_CjvasWc81qm8jk3i9ak9Nvo-hW6GzeHRjFhQMj78HKfLlPg67jWm4N",
+               "photo_reference" : "AUjq9jl7rcYZUy_nnoPEK7pPyXKsqeR01rX4txqSCbo5itB-dn-YZErPZ2_K3MjJBNryvecrNtFt_lGpQGOOd6JeKRldu13amgBYrAK6iOZ7l0p_KVi7atDYC5BiATtvsgIjqbJzyhOH5IFI24uHL7TYjjZrQWHJrsc3CNf8FTuLSeXdS9xg",
                "width" : 3524
             }
          ],
@@ -629,7 +582,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/102264814394431587938\"\u003e715 Restaurant\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jkzHJ4Jx37akc9reHOX-CGcGgwCTrrvNW0sg7D2eAtQ3hQ0MXyCaeWf3T2lMlmO951fQCYGYlAjLrnwqGPXXkDTz9qBVY6qK44Vkp0f5itGPBDy2PscWJiQCJKj9vtcHXfFlOHhs1oObBfVBe4zTw2O4XAzeyPfSHeY6K07kmtUPGfy",
+               "photo_reference" : "AUjq9jkQT-Z79HEKsoAM2EwNuMNWBFAvyDrMTZMNFQfWcTsm-JInXTOyavDjBWnleo5PVCJLdAWlIRYtkXNgdFMLG3xtVE-OlGSwf8-1-wNbDAEcDZZSYe6xgOHk3E6uufvUwniqbZoLKoNHSkeKy6gc6-ZXs9YUXis4TGNmRgOf-x3V9F4e",
                "width" : 2048
             }
          ],
@@ -673,7 +626,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/112271309775206989847\"\u003eA Google User\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jlUGArnd2oqq2iXcVTcEc04uM_X74q7hr5-6se7FzN-PRQJym5a_B117jTZSW6Z3BMUkrddCnBUQW6WRlA2fhvy1AAjdbOzexKCp7H_kCfBkdfVlHL7CSOd0UFhX8rf_aUCgKFDFaw6W9ajUPevzFvlm7DoKHOVty2Icim0FE8eV5dp",
+               "photo_reference" : "AUjq9jnNFEvfP4nlQrDYw4z7eDv4RV_6DLh3qmXoelwVvXF21_u_L6YsBoFCO0lzUWiJRCFWdAcsK5np_ncUP9ns9h_Ys80ny2PKiFcTV-wa2W2cUEFn-k5SVSI9hmRwfDqKzq2AQGNUbIJdN37HLCWZe_XQMjt4LLogQ7XK51DLWRnEsR87",
                "width" : 1024
             }
          ],
@@ -726,7 +679,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/100754760741228826051\"\u003eJavier Ahumada\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jkOeaBuswtsUYD_fz03Vt6at4c3a0TiMqET8lAf-R5M6izeNQkDR7hEkfdywyVzZhoN9isj4jtFjno53rnXVhdXHedELP504EUytQeSZ6DF5islG0l_Qw5_ZRWBn73QfkbLzOuvHf70yZLetYZ32NhpcBHBzv9z53Ndo_KDQaJSpK1o",
+               "photo_reference" : "AUjq9jlyOxzF1C2W8Zbn_7OMz5PT8UBqDIYaePo2hCWxKiXM26aR0SLNyu4h4-_0IOCfYB_WG5EURsR_C9u2u32JNrUMc1lbkP7qcXUn8YlpnitvdxAdX7MpuRNmwQEW0oXhJ8CBBqev2Swp6iU9rjlOBMUhBfxaJVv_QyjDSHmDaaYnZTbW",
                "width" : 3264
             }
          ],
@@ -780,7 +733,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/101407573898866907673\"\u003eDomino&#39;s Pizza\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jniLRbORKaiXKC92naWcZCKKl4IFZeb6YZMO7eV3vsRN4Lp5JX1hxm6Q4BaN773pD07_Wt5zxrH65iZ4Za-9ycI4mt3gr3XSnspSiHlj6lDut2doinXNXoTa1usIgbuALnsbJDfA7xmDBrHs7MJrrMfNUgwXmP1BhwGKFLluiRVykmv",
+               "photo_reference" : "AUjq9jnSgjTepBx2r7a8a7SrnE9vtoD6EmqbCmzxpQT1joX92nGrGdQBTuJdsxQGipgtjoazlUf1qlExjrvhB1HV-dheyu2mJF2iho-7und5i3ZMGDrjD_5lbYH7eXqEGjXzuPpIrF4iHNQUCNSaFUx_1Zw_HuCFjulzrT1lTiXjV0-95LDQ",
                "width" : 3024
             }
          ],
@@ -834,7 +787,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/116441630404119864856\"\u003eRiley Swickard\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jnOriTrcPikHXVGqWmj5hNKyNOavvUGyJFMzvlo6s2vWZKlphKlf6HjDodaOEgGsT8VPkm2npiPPwVQ-oYF0gvi4enq8QSwbOzyinXhpFPtw_oq0NOHS4cmHOXgEauscofmqCNNUH7rUP4YJW17N9xOXIPSP7K4M2RD9UVhFQLKmK3A",
+               "photo_reference" : "AUjq9jnt-pUlsqq_O6PjxHoCaJjz9OoPzorzZelhLMmglcO8dzErRVpXMkUmIVblNNJqUxV3M8s8bH7tKDd5Jl82UzsmWWSLCgmidqmH-xvh06GIaVtNIziKUAIkUTlE9brhFEXQGBMR9ylqe6yWwF4tvfEWtDPusTThCXNVDBduaiSaLBk6",
                "width" : 1242
             }
          ],
@@ -855,53 +808,6 @@
             "establishment"
          ],
          "user_ratings_total" : 1040
-      },
-      {
-         "business_status" : "OPERATIONAL",
-         "formatted_address" : "1115 Massachusetts St, Lawrence, KS 66044, United States",
-         "geometry" : {
-            "location" : {
-               "lat" : 38.9632008,
-               "lng" : -95.23621659999999
-            },
-            "viewport" : {
-               "northeast" : {
-                  "lat" : 38.96448857989272,
-                  "lng" : -95.23480712010726
-               },
-               "southwest" : {
-                  "lat" : 38.96178892010728,
-                  "lng" : -95.23750677989271
-               }
-            }
-         },
-         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-         "icon_background_color" : "#FF9E67",
-         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-         "name" : "Fuzzy's Taco Shop",
-         "opening_hours" : {
-            "open_now" : true
-         },
-         "photos" : [
-            {
-               "height" : 3024,
-               "html_attributions" : [
-                  "\u003ca href=\"https://maps.google.com/maps/contrib/102670287145921800598\"\u003eTyler Atkerson\u003c/a\u003e"
-               ],
-               "photo_reference" : "AUjq9jmgrzWI2nIOV1DRn6Vy6nt5pSYcVpkw_HwDYkt9DQaoTD9qbk-4ik9awlA3Pbsl5o9C6aS1Z-0lwcOJASnNy2JMZKalHf_feFth2L6WMfQja5eRaZqJRuRjEgMyVWYPb0d0BMyurFYvYFcvEi4e8jRLcb_1UIxWU41Ci8Lvjw1xhDnR",
-               "width" : 4032
-            }
-         ],
-         "place_id" : "ChIJW2PlFFBvv4cRQaJJWc1Goi8",
-         "plus_code" : {
-            "compound_code" : "XQ77+7G Lawrence, Kansas",
-            "global_code" : "86C6XQ77+7G"
-         },
-         "price_level" : 1,
-         "rating" : 4.2,
-         "reference" : "ChIJW2PlFFBvv4cRQaJJWc1Goi8",
-         "types" : [ "bar", "restaurant", "food", "point_of_interest", "establishment" ],
-         "user_ratings_total" : 1525
       },
       {
          "business_status" : "OPERATIONAL",
@@ -935,7 +841,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/102189567611576179746\"\u003eA Google User\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jmo_FbXVNqHfwzabFza1nthKt9-rubcAAwdCgmh7vm329UhaYpkx5wT0w_VMLr_4c40rHQvp_SgsVmoofFWDpuGGKRHOWP0Sv5dTrXLV6yk50h-8rsG36UlxgjK8j2tQ2oqvfA-nB8lrxHb48tgMY3FPL4CSsRZ1_aso8xrQSd1hV0b",
+               "photo_reference" : "AUjq9jncsvnUmDBkPBYfZ5HI-RBOKLdUL6-L07RyYJqx_cAFXvDnkI4SvcPNaZTYHn5E9eb23zbgnKW5B2ZYrnFKUCeF1dZUc8MZUSk9dhToEFTrPcxHHOE7d4CJ5U6_t-Bg8QCgTgkQZHM7Dvjh9yBTXTuwUx3Z6q3lfPUyGvXG2g_HSn4W",
                "width" : 1000
             }
          ],
@@ -989,7 +895,7 @@
                "html_attributions" : [
                   "\u003ca href=\"https://maps.google.com/maps/contrib/114052918856659845953\"\u003ePizza Hut\u003c/a\u003e"
                ],
-               "photo_reference" : "AUjq9jlP7a8b4zREoMeEcKDGe7b30vDo1y2dU1HsVB_RdVh2yvue0naYMomOaB6zItLtaVtLv_dAq4hlxgKrlgIx2cz-syCNpOFs0C-MmLIZSC_1Wf3pLlsDqNcUgOUUfSoY4pBCWqoOcGkUSoO0v9Dvm4rc6mYkjVhFOEJiIUqvs5jPYPtP",
+               "photo_reference" : "AUjq9jnXDQo57F1YIRt--if6jHTM_Zg6_PRpwGAUNKNP0IyddT_9W_lQ3pBAUuHKwuc1ip4bfXvUZW-dP5Xo8rugx3KfA803EmcmWTyBtoNd_QhJVlg0t_PsEVh6I8n-yJ29wqmDDlOowU-dhj6IAPdFiMdMVjNGMs2d_fCT1BaBLyoL0e1q",
                "width" : 1025
             }
          ],
@@ -1010,6 +916,107 @@
             "establishment"
          ],
          "user_ratings_total" : 342
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "1008 W 23rd St, Lawrence, KS 66046, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.94309579999999,
+               "lng" : -95.2480786
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.94442552989272,
+                  "lng" : -95.24684252010729
+               },
+               "southwest" : {
+                  "lat" : 38.94172587010728,
+                  "lng" : -95.24954217989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+         "icon_background_color" : "#7B9EB0",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+         "name" : "Domino's Pizza",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/102979444052251869207\"\u003eJacob Olson\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jkoBIV_6GGYylXcPpiVL0o7U_jk0IsSYCjIkgERF3rV5-SWHe1uwCgGgdRyU5lUvnAWWZ5cQdlb6SHxGdGIHx8nZvMKUdhdlzslJmfhzy6EvwhpED6PSCTu1EP1_wbuaihtjtDU7CwdO7CLl464JYcAWx7_-h2FJOIQjSCCHr6V9vJJ",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJ19a7B8hov4cRhng3CnCR7AI",
+         "plus_code" : {
+            "compound_code" : "WQV2+6Q Lawrence, Kansas",
+            "global_code" : "86C6WQV2+6Q"
+         },
+         "price_level" : 1,
+         "rating" : 3.9,
+         "reference" : "ChIJ19a7B8hov4cRhng3CnCR7AI",
+         "types" : [
+            "meal_takeaway",
+            "meal_delivery",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 232
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "4931 W 6th St, Lawrence, KS 66049, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9705282,
+               "lng" : -95.3090261
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.97193807989272,
+                  "lng" : -95.30766722010728
+               },
+               "southwest" : {
+                  "lat" : 38.96923842010728,
+                  "lng" : -95.31036687989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Morningstar's New York Pizza",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 2988,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106278085425909497348\"\u003eIsidro Rivera\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jkyJxSUYi65oCz7HN6QETFTvYnXZ_bpK3NJ4AS0ryyaiQRqG3wKyKc-r5EBbR3Q5TSKiLZ8Wq0SLZq73tFmJQpBwc9PNFmgJcPYgZ6h0MIRdzSc2AXljrYHHRTkd4MEI_FnNJ83ZGdZM0VzjQYd45ilO20VaLzGnR1aaHretV1M3mNY",
+               "width" : 5312
+            }
+         ],
+         "place_id" : "ChIJaRxNEKBuv4cR-E_fUx7-UG8",
+         "plus_code" : {
+            "compound_code" : "XMCR+69 Lawrence, Kansas",
+            "global_code" : "86C6XMCR+69"
+         },
+         "price_level" : 2,
+         "rating" : 4.5,
+         "reference" : "ChIJaRxNEKBuv4cR-E_fUx7-UG8",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 324
       }
    ],
    "status" : "OK"

@@ -146,10 +146,10 @@ def index():
         radio_choice = flask.request.form.get("radioChoice")
         if radio_choice == 'PastData':
             history(location, flask.request.form.get("PastDate"))
-            return flask.send_file('history.json', as_attachment=True)
+            return flask.send_file('history.json', as_attachment=True, attachment_filename=(flask.request.form.get('PastDate') + "-" + current_info['location']['city'] + '-history.json'))
         elif radio_choice == 'FutureData':
             future(location, flask.request.form.get("FutureDate"))
-            return flask.send_file('future.json', as_attachment=True)
+            return flask.send_file('future.json', as_attachment=True, attachment_filename=(flask.request.form.get('FutureDate') + "-" + current_info['location']['city'] + '-future.json'))
         elif (city_name:=flask.request.form['location']):
             real_time(city_name)
             return flask.redirect(flask.url_for('real_time_data', variable=city_name))
@@ -167,10 +167,10 @@ def real_time_data(variable):
         radio_choice = flask.request.form.get("radioChoice")
         if radio_choice == 'PastData':
             history(location, flask.request.form.get("PastDate"))
-            return flask.send_file('history.json', as_attachment=True)
+            return flask.send_file('history.json', as_attachment=True, attachment_filename=(flask.request.form.get('PastDate') + "-" + current_info['location']['city'] + '-history.json'))
         elif radio_choice == 'FutureData':
             future(location, flask.request.form.get("FutureDate"))
-            return flask.send_file('future.json', as_attachment=True)
+            return flask.send_file('future.json', as_attachment=True, attachment_filename=(flask.request.form.get('FutureDate')+ "-" + current_info['location']['city'] + '-future.json'))
         elif (city_name:=flask.request.form['location']):
             real_time(city_name)
             return flask.redirect(flask.url_for('real_time_data', variable=city_name))
@@ -195,8 +195,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
 
 
 
