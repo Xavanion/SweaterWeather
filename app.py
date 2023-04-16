@@ -132,7 +132,8 @@ def index():
         if radio_choice == 'CurrentData':
             real_time(location)
         elif radio_choice == 'PastData':
-            history(location, flask.request.form.get("PastDate"))
+            testy_boi = history(location, flask.request.form.get("PastDate"))
+            print(testy_boi)
         elif radio_choice == 'Forecast':
             forecast(location)
         elif radio_choice == 'FutureData':
