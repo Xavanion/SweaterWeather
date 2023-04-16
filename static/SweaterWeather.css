@@ -151,12 +151,10 @@ input[type=date] {
 
 .text {
   flex-basis: 40%;
-  border: 2px solid black;
 }
 
 .list {
   flex-basis: 20%;
-  border: 2px solid black;
 }
 
 .list ul {
