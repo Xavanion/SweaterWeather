@@ -101,7 +101,7 @@ class Read:
         global json_data
         with open(self.file) as f:
             json_data = json.load(f)
-        print(self.forecast())
+        #print(self.forecast())
 
 
 read_stuff = Read('forecast.json')

@@ -161,13 +161,14 @@ input[type=date], input[type=radio], input[type=label] {
   flex-basis: 20%;
   margin-left: 5%;
   margin-right: 5%;
+  padding: 5%;
   padding-top: 30px;
   padding-bottom: 20px;
+  text-align: center;
   border-radius: 20px;
   border: 1px solid black;
   background-color: #c9c0c0cc;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-  text-align: center;
 }
 
 .list ul {
@@ -175,6 +176,7 @@ input[type=date], input[type=radio], input[type=label] {
   padding: 0;
   margin: 0;
 }
+
 #theInfo {
   color:rgb(0, 0, 0);
   font-size:150%;
@@ -187,6 +189,7 @@ input[type=date], input[type=radio], input[type=label] {
   background-color: #c9c0c0cc;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
+
 #titleInfo {
   text-decoration: underline;
   font-size: x-large;
