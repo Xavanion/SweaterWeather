@@ -126,7 +126,8 @@ def site():
             elif (city_name:=flask.request.form['location']):
                 real_time(city_name)
         # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
-        return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)))
+        return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)),
+                                     current_temp = "15", feels_temp = "20")
 
     app.run(debug=True)
 
