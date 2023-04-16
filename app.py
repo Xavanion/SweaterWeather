@@ -131,6 +131,7 @@ def forecast(location):
 def site():
     app.run(debug=True)
 
+# Render's the site when asking for real-time data
 def real_time_render(current_info, pizza_pizza):
     return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)),
                                 current_temp = current_info['temperature']['temp'], feels_temp = current_info['temperature']['feelslike'], photo = (current_info['condition']['condition']) + '.png',
