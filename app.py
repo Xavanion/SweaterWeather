@@ -4,6 +4,7 @@ from pprint import pprint
 import geocoder, swagger_client, json, flask, sqlite3, datetime
 from read_json import Read
 
+
 # Flask app
 app = flask.Flask(__name__)
 
@@ -123,6 +124,12 @@ def forecast(location):
 def site():
     app.run(debug=True)
 
+def real_time_render(current_info):
+    return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)),
+                                current_temp = current_info['temperature']['temp'], feels_temp = current_info['temperature']['feelslike'], photo = (current_info['condition']['condition']) + '.png',
+                                local = (current_info['location']['city'] + ', ' + current_info['location']['country']))
+
+
 
 # Handles Default loading of Site
 @app.route('/', methods=['GET', 'POST'])
@@ -130,18 +137,12 @@ def index():
     real_time(cur_location)
     current_info = file_reader('real_time.json')
     if flask.request.method == "POST":
-        radio_choice = flask.request.form.get("radioChoice")
-        if radio_choice == 'PastData':
-            history(location, flask.request.form.get("PastDate"))
-        elif radio_choice == 'FutureData':
-            future(location, flask.request.form.get("FutureDate"))
-        elif (city_name:=flask.request.form['location']):
+        if (city_name:=flask.request.form['location']):
             real_time(city_name)
-            return flask.redirect(flask.url_for('real_time_data', variable=city_name))
+        return flask.redirect(flask.url_for('real_time_data', variable=city_name))
     # Command to render site
-    return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)),
-                                 current_temp = current_info['temperature']['temp'], feels_temp = current_info['temperature']['feelslike'], photo = (current_info['condition']['condition']) + '.png',
-                                 local = (current_info['location']['city'] + ', ' + current_info['location']['country']))
+    return real_time_render(current_info)
+
 
 # View real time data
 @app.route('/<variable>/real_time_data', methods=['GET', 'POST'])
@@ -151,41 +152,71 @@ def real_time_data(variable):
     if flask.request.method == 'POST':
         if (city_name:=flask.request.form['location']):
             real_time(city_name)
-            return flask.redirect(flask.url_for('real_time_data', variable=city_name))
-    return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)), 
-                          current_temp = current_info['temperature']['temp'], feels_temp = current_info['temperature']['feelslike'], photo = (current_info['condition']['condition']) + '.png',
-                                 local = (current_info['location']['city'] + ', ' + current_info['location']['country']))
-
-# View past history of location
-@app.route('/past_history', methods=['GET', 'POST'])
-def past_history(location):
-    pass
-
-# Viewing Future Data for a given location
-@app.route('/future_history', methods=['GET', 'POST'])
-def future_history(location):
-    pass
-
-# View Hourly forecast for a location
-@app.route('/forecast', methods=['GET', 'POST'])
-def forecast_call(location):
-    pass
-
-
-
+        return flask.redirect(flask.url_for('real_time_data', variable=city_name))
+    return real_time_render(current_info)
 
 def main():
-    # Create SQL Datadase
-    #conn = sqlite3.connect('email_database.db')
-    #c = conn.cursor()
-    #c.execute("""CREATE TABLE emails()""")
-    
-    # Testing for Json File
-    #real_time_data = file_reader('real_time.json')
-    #print(real_time_data['location']['city'] + ', ' + real_time_data['location']['country'])
-
     site()
 
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+# Scary code for later
+'''
+# Post Request Handler
+radio_choice = flask.request.form.get("radioChoice")
+if radio_choice == 'PastData':
+    history(location, flask.request.form.get("PastDate"))
+    return flask.redirect(flask.url_for('past_history', current_info=current_info))
+elif radio_choice == 'FutureData':
+    future(location, flask.request.form.get("FutureDate"))
+    return flask.redirect(flask.url_for('future_history', current_info=current_info, local=(current_info['location']['city'])))
+
+# Render Pages w/Future Requests
+def future_render(future_data):
+    return flask.render_template("future.html", date = future_data['time_interval1']['date_and_time']['date'], temp = future_data['time_interval1']['info']['temperature'],
+                                 feels = future_data['time_interval1']['info']['feelslike'], local = 'Test')
+
+# Render Pages w/Past Requests
+def past_render(current_info):
+    pass
+
+# View past history of location
+@app.route('/city/past_history', methods=['GET', 'POST'])
+def past_history(current_info):
+    current_info = file_reader('history.json')
+    if flask.request.method == 'POST':
+        if (city_name:=flask.request.form['location']):
+            real_time(city_name)
+        return flask.redirect(flask.url_for('real_time_data', variable=city_name))
+    
+
+# Viewing Future Data for a given location
+@app.route('/<local>/future_history', methods=['GET', 'POST'])
+def future_history(current_info, local):
+    future(local)
+    current_info = file_reader('future.json')
+    if flask.request.method == 'POST':
+        radio_choice = flask.request.form.get("radioChoice")
+        if radio_choice == 'PastData':
+            history(location, flask.request.form.get("PastDate"))
+            return flask.redirect(flask.url_for('past_history'))
+        elif radio_choice == 'FutureData':
+            future(location, flask.request.form.get("FutureDate"))
+            return flask.redirect(flask.url_for('future_history'))
+        elif (city_name:=flask.request.form['location']):
+            real_time(city_name)
+        return flask.redirect(flask.url_for('real_time_data', variable=city_name))
+    return future_render(current_info)
+
+# View Hourly forecast for a location
+@app.route('/<variable>/forecast', methods=['GET', 'POST'])
+def forecast_call(location):
+    pass
+'''
