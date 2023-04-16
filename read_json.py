@@ -1,8 +1,8 @@
 import json
 
 class Read:
-    def __init__(self, file_name):
-        self.file = file_name
+    def __init__(self, filename):
+        self.file = filename
 
     def history(self):
         location_data = {}
@@ -46,7 +46,7 @@ class Read:
         
         conditioninfo = {}
         conditioninfo['icon'] = currentdata['condition']['icon']
-        conditioninfo['condition'] = currentdata['condition']['icon']
+        conditioninfo['condition'] = currentdata['condition']['text']
         realtimedata['condition'] = conditioninfo
 
         tempinfo = {}
@@ -139,8 +139,12 @@ class Read:
         global json_data
         with open(self.file) as f:
             json_data = json.load(f)
-        #print(self.forecast())
 
-
-read_stuff = Read('future.json')
-read_stuff.run()
+        if self.file == 'forecast.json':
+            return self.forecast()
+        elif self.file == 'future.json':
+            return self.future()
+        elif self.file == 'history.json':
+            return self.history()
+        elif self.file == 'real_time.json':
+            return self.realtime()
