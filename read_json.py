@@ -144,7 +144,7 @@ class Read:
 
     def run(self):
         global json_data
-        with open(self.file) as f:
+        with open(self.file, encoding='utf-8') as f:
             json_data = json.load(f)
 
         if self.file == 'forecast.json':

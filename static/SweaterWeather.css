@@ -111,7 +111,7 @@ align-items: center;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
-input[type=button], input[type=submit], input[type=reset] {
+input[type=button], input[type=reset] {
   background-color: #27478d;
   border: none;
   color: white;
@@ -121,6 +121,26 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
   text-align: center;
 }
+input[type=submit]{
+  background-color: #27478d;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  left: 20%;
+}
+input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, input[type=date]:hover{
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+.search-bar:hover{
+  background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+}
+
 input[type=date], input[type=radio], input[type=label] {
   background-color: #27478d;
   border: none;
@@ -146,13 +166,21 @@ input[type=date], input[type=radio], input[type=label] {
 }
 .photo {
   flex-basis: 30%;
-  border: 1px solid black;
   background-color: #c9c0c0cc;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 .photo img {
   width: 100%;
+}
+
+.photo img:active {
+  transform:rotate(360deg);
+  transition-duration: 1s;
+}
+
+#enlarger {
+  display:none;
 }
 
 .text {
@@ -201,6 +229,7 @@ input[type=date], input[type=radio], input[type=label] {
   text-decoration: none;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
+
 
 #location_name {
   font-size: large;

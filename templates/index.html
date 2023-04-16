@@ -18,11 +18,13 @@
 				<div class="big-box">
 					<div class="photo">
 						<h2>{{descriptor}}</h2>
-						<img src="/static/assets/weather/{{photo}}" alt="Weather">
+						<img src="/static/assets/weather/{{photo}}" alt="Weather" draggable="false">
 					</div>
 					<div class="text">
 						<p id="titleInfo">Weather Data Results: </p><p id="location_name">{{local}}</p>
 						<p id="theInfo">Current Temp: {{current_temp}} f<br> Feels Like: {{feels_temp}} f<br> Wind Speeds: {{wind_speed}} mph</p>
+						<input type="checkbox" id="enlarger"/>
+						<label class="photo img" for="enlarger"></label>
 					</div>
 					<div class="list">
 						<h1>Local Pizza</h1>
@@ -50,7 +52,7 @@
 							min="{{future_min}}" max="{{future_max}}"><br><br>
 						
 						
-						<input type="submit" value="GO!" /> <br>
+						<input type="submit" value="Download!" /> <br>
 					</div>
 				</div>
 			</form>
