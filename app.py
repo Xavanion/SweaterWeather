@@ -16,10 +16,10 @@ cur_location = ','.join(cur_location)
 # Time thing
 today = datetime.date.today()
 
-
+# Json file reader
 def file_reader(file_name):
     reader = Read(file_name)
-    reader.run()
+    return reader.run()
 
 def search():
     # create an instance of the API class
@@ -140,8 +140,7 @@ def main():
     #conn = sqlite3.connect('email_database.db')
     #c = conn.cursor()
     #c.execute("""CREATE TABLE emails()""")
-    reader = Read('real_time.json')
-    real_time_data = reader.run()
+    real_time_data = file_reader('real_time.json')
     print(real_time_data['temperature']['temp'])
 
     #site()
