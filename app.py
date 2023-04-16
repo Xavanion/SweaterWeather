@@ -4,6 +4,9 @@ from pprint import pprint
 import geocoder, swagger_client, json, flask, sqlite3, datetime
 from read_json import Read
 
+# Flask app
+app = flask.Flask(__name__)
+
 # Configure API key authorization: ApiKeyAuth
 configuration = swagger_client.Configuration()
 configuration.api_key['key'] = ''
@@ -21,6 +24,7 @@ def file_reader(file_name):
     reader = Read(file_name)
     return reader.run()
 
+# API Search call
 def search():
     # create an instance of the API class
     location = input('Enter a place: ')
@@ -38,6 +42,7 @@ def search():
     except ApiException as e:
         print("Exception when calling APIsApi->search_autocomplete_weather: %s\n" % e)
 
+# API Real_time call
 def real_time(location):
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
@@ -52,6 +57,7 @@ def real_time(location):
     except ApiException as e:
         print("Exception when calling APIsApi->realtime_weather: %s\n" % e)
 
+# API future date call
 def future(location, date):
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
@@ -67,6 +73,7 @@ def future(location, date):
     except ApiException as e:
         print("Exception when calling APIsApi->future_weather: %s\n" % e)
 
+# API past history call
 def history(location, date):
     # Creates start/end date for API class
     date = datetime.datetime.strptime(date, '%Y-%m-%d').date()
@@ -92,6 +99,7 @@ def history(location, date):
     except ApiException as e:
         print("Exception when calling APIsApi->history_weather: %s\n" % e)
 
+# API hourly forecast call
 def forecast(location):
     # create an instance of the API class
     api_instance = swagger_client.APIsApi(swagger_client.ApiClient(configuration))
@@ -109,31 +117,35 @@ def forecast(location):
     except ApiException as e:
         print("Exception when calling APIsApi->forecast_weather: %s\n" % e)
 
+# Run's flask site
 def site():
-    # Make Flask App
-    app = flask.Flask(__name__)
-    location = cur_location
-    @app.route('/', methods=['GET', 'POST'])
-    def index():
-        # Takes form method post with name city and sets that equal to city name
-        # Thinking of passing cityname to insert_record for sql database for later email list/recommendations
-        if flask.request.method == "POST":
-            radio_choice = flask.request.form.get("radioChoice")
-            if radio_choice == 'CurrentData':
-                real_time(location)
-            elif radio_choice == 'PastData':
-                history(location, flask.request.form.get("PastDate"))
-            elif radio_choice == 'Forecast':
-                forecast(location)
-            elif radio_choice == 'FutureData':
-                future(location, flask.request.form.get("FutureDate"))
-            elif (city_name:=flask.request.form['location']):
-                real_time(city_name)
-        # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
-        return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)),
-                                     current_temp = "15", feels_temp = "20")
-
     app.run(debug=True)
+
+
+# Handles Default loading of Site
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    # Takes form method post with name city and sets that equal to city name
+    # Thinking of passing cityname to insert_record for sql database for later email list/recommendations
+    if flask.request.method == "POST":
+        radio_choice = flask.request.form.get("radioChoice")
+        if radio_choice == 'CurrentData':
+            real_time(location)
+        elif radio_choice == 'PastData':
+            history(location, flask.request.form.get("PastDate"))
+        elif radio_choice == 'Forecast':
+            forecast(location)
+        elif radio_choice == 'FutureData':
+            future(location, flask.request.form.get("FutureDate"))
+        elif (city_name:=flask.request.form['location']):
+            location = city_name
+            real_time(city_name)
+        # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
+    return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)),
+                                 current_temp = "15", feels_temp = "20")
+
+
+
 
 def main():
     # Create SQL Datadase
