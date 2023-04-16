@@ -112,9 +112,8 @@ def forecast(location):
 def site():
     # Make Flask App
     app = flask.Flask(__name__)
-    location = cur_location
     @app.route('/', methods=['GET', 'POST'])
-    def index(location):
+    def index():
         # Takes form method post with name city and sets that equal to city name
         # Thinking of passing cityname to insert_record for sql database for later email list/recommendations
         if flask.request.method == "POST":
@@ -140,10 +139,12 @@ def main():
     #conn = sqlite3.connect('email_database.db')
     #c = conn.cursor()
     #c.execute("""CREATE TABLE emails()""")
-    real_time_data = file_reader('real_time.json')
-    print(real_time_data['temperature']['temp'])
+    
+    # Testing for Json File
+    #real_time_data = file_reader('real_time.json')
+    #print(real_time_data['temperature']['temp'])
 
-    #site()
+    site()
 
 
 if __name__ == "__main__":
