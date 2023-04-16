@@ -1,7 +1,7 @@
 from __future__ import print_function
 from swagger_client.rest import ApiException
 from pprint import pprint
-import geocoder, swagger_client, json, flask, sqlite3, datetime, googlemaps, requests
+import geocoder, swagger_client, json, flask, sqlite3, datetime, googlemaps, requests, random
 from geopy.geocoders import Nominatim
 from read_json import Read
 
@@ -133,10 +133,11 @@ def site():
 
 # Render's the site when asking for real-time data
 def real_time_render(current_info, pizza_pizza):
+    choices = random.sample(pizza_pizza['locations'], 3)
     return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)),
                                 current_temp = current_info['temperature']['temp'], feels_temp = current_info['temperature']['feelslike'], photo = (current_info['condition']['condition']) + '.png',
-                                local = (current_info['location']['city'] + ', ' + current_info['location']['country']), location1=pizza_pizza['locations'][0], location2=pizza_pizza['locations'][1],
-                                location3=pizza_pizza['locations'][2], descriptor = (current_info['condition']['condition']), wind_speed = current_info['condition']['windspeed'])
+                                local = (current_info['location']['city'] + ', ' + current_info['location']['country']), location1=choices[0], location2=choices[1],
+                                location3=choices[2], descriptor = (current_info['condition']['condition']), wind_speed = current_info['condition']['windspeed'])
 
 # Handles Default loading of Site
 @app.route('/', methods=['GET', 'POST'])
@@ -157,7 +158,6 @@ def index():
     # Command to render site
     pizza_pizza = pizza_recommender((current_info['location']['city'] + ', ' + current_info['location']['country']))
     return real_time_render(current_info, pizza_pizza)
-
 
 # View real time data
 @app.route('/<variable>/real_time_data', methods=['GET', 'POST'])
@@ -188,7 +188,6 @@ def pizza_recommender(local):
         file.write(response.text)
     pizza_dict = file_reader('recommendations.json')
     return pizza_dict
-
 
 def main():
     site()
