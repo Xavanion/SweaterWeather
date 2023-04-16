@@ -17,6 +17,17 @@ cur_location = ','.join(cur_location)
 today = datetime.date.today()
 
 
+def file_reader(file_name):
+    reader = Read(file_name)
+    if file_name == "forecast.json":
+        pass
+    elif file_name == "future.json":
+        pass
+    elif file_name == "history.json":
+        pass
+    elif file_name == "real_time.json":
+        pass
+
 def search():
     # create an instance of the API class
     location = input('Enter a place: ')
