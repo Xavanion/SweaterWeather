@@ -78,11 +78,10 @@ def history(location, date):
     q = location # str | Pass US Zipcode, UK Postcode, Canada Postalcode, IP address, Latitude/Longitude (decimal degree) or city name. Visit [request parameter section](https://www.weatherapi.com/docs/#intro-request) to learn more. 
     dt = date # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format
     end_dt = date_end # date | Date on or after 1st Jan, 2015 in yyyy-MM-dd format<br />'end_dt' should be greater than 'dt' parameter and difference should not be more than 30 days between the two dates.  (optional)
-    hour = 12 # int | Must be in 24 hour. For example 5 pm should be hour=17, 6 am as hour=6  (optional)
 
     try:
         # History API
-        api_response = api_instance.history_weather(q, dt, end_dt=end_dt, hour=hour)
+        api_response = api_instance.history_weather(q, dt, end_dt=end_dt)
         data = api_response.to_dict()
         with open('history.json', 'w') as f:
             f.write(json.dumps(data, indent=4, sort_keys=True, default=str))
@@ -109,6 +108,7 @@ def forecast(location):
 def site():
     # Make Flask App
     app = flask.Flask(__name__)
+    location = cur_location
     @app.route('/', methods=['GET', 'POST'])
     def index():
         # Takes form method post with name city and sets that equal to city name
@@ -116,13 +116,13 @@ def site():
         if flask.request.method == "POST":
             radio_choice = flask.request.form.get("radioChoice")
             if radio_choice == 'CurrentData':
-                real_time(cur_location)
+                real_time(location)
             elif radio_choice == 'PastData':
-                history(cur_location, flask.request.form.get("PastDate"))
+                history(location, flask.request.form.get("PastDate"))
             elif radio_choice == 'Forecast':
-                forecast(cur_location)
+                forecast(location)
             elif radio_choice == 'FutureData':
-                future(cur_location, flask.request.form.get("FutureDate"))
+                future(location, flask.request.form.get("FutureDate"))
             elif (city_name:=flask.request.form['location']):
                 real_time(city_name)
         # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
