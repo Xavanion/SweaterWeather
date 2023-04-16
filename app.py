@@ -2,7 +2,7 @@ from __future__ import print_function
 from swagger_client.rest import ApiException
 from pprint import pprint
 import geocoder, swagger_client, json, flask, sqlite3, datetime
-#from read_json import Read
+from read_json import Read
 
 # Configure API key authorization: ApiKeyAuth
 configuration = swagger_client.Configuration()
