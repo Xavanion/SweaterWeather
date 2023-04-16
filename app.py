@@ -16,6 +16,8 @@ g = geocoder.ip('me')
 cur_location = [str(x) for x in g.latlng]
 cur_location = ','.join(cur_location)
 
+location = cur_location
+
 # Time thing
 today = datetime.date.today()
 
@@ -125,26 +127,34 @@ def site():
 # Handles Default loading of Site
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    # Takes form method post with name city and sets that equal to city name
-    # Thinking of passing cityname to insert_record for sql database for later email list/recommendations
+    real_time(cur_location)
+    current_info = file_reader('real_time.json')
     if flask.request.method == "POST":
         radio_choice = flask.request.form.get("radioChoice")
-        if radio_choice == 'CurrentData':
-            real_time(location)
-        elif radio_choice == 'PastData':
-            testy_boi = history(location, flask.request.form.get("PastDate"))
-            print(testy_boi)
-        elif radio_choice == 'Forecast':
-            forecast(location)
+        if radio_choice == 'PastData':
+            history(location, flask.request.form.get("PastDate"))
         elif radio_choice == 'FutureData':
             future(location, flask.request.form.get("FutureDate"))
         elif (city_name:=flask.request.form['location']):
-            location = city_name
             real_time(city_name)
-    # Command to render site (Has to be in a templates folder or we can figure out how to change that if needed)
-    # DISPLAY ONLY REAL TIME
+            return flask.redirect(flask.url_for('real_time_data', variable=city_name))
+    # Command to render site
     return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)),
-                                 current_temp = "15", feels_temp = "20")
+                                 current_temp = current_info['temperature']['temp'], feels_temp = current_info['temperature']['feelslike'], photo = (current_info['condition']['condition']) + '.png',
+                                 local = (current_info['location']['city'] + ', ' + current_info['location']['country']))
+
+# View real time data
+@app.route('/<variable>/real_time_data', methods=['GET', 'POST'])
+def real_time_data(variable):
+    real_time(variable)
+    current_info = file_reader('real_time.json')
+    if flask.request.method == 'POST':
+        if (city_name:=flask.request.form['location']):
+            real_time(city_name)
+            return flask.redirect(flask.url_for('real_time_data', variable=city_name))
+    return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)), 
+                          current_temp = current_info['temperature']['temp'], feels_temp = current_info['temperature']['feelslike'], photo = (current_info['condition']['condition']) + '.png',
+                                 local = (current_info['location']['city'] + ', ' + current_info['location']['country']))
 
 # View past history of location
 @app.route('/past_history', methods=['GET', 'POST'])
@@ -172,7 +182,7 @@ def main():
     
     # Testing for Json File
     #real_time_data = file_reader('real_time.json')
-    #print(real_time_data['temperature']['temp'])
+    #print(real_time_data['location']['city'] + ', ' + real_time_data['location']['country'])
 
     site()
 
