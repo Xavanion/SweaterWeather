@@ -118,7 +118,7 @@ def site():
             if radio_choice == 'CurrentData':
                 real_time(cur_location)
             elif radio_choice == 'PastData':
-                history(cur_location, flask.request.form.get("WeatherDate"))
+                history(cur_location, flask.request.form.get("PastDate"))
             elif radio_choice == 'Forecast':
                 forecast(cur_location)
             elif radio_choice == 'FutureData':

@@ -91,6 +91,7 @@ line-height: 20px;
 }
 
 .formBox {
+  aspect-ratio: 4.5/1;
   width: auto;
   height: auto;
   margin: 0 auto;
