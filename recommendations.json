@@ -1,0 +1,1016 @@
+{
+   "html_attributions" : [],
+   "next_page_token" : "AUjq9jmIAvqoNk3IEDuIZn7_0NwWwIOMRG7fRNSWb8r86mci2flaRKM_Xew0ma_37WWxllysnmJbS82zLYOiPFxwHhQPo5bLAUawpcOzxx84g_KkcUw8yFbxfx47-cyDNPQwHff4BhFp-5iAvNrkcmxeqAvyan--c_ayoxhnUaZXdgKhyUIJfG1ZDlU77e8WRsXosTtJmKZ9qcefgjkKUBUTlZZIrNwbx1CbelhwDtmL3j8FxShLF6C7zbNBCawknqKWUBKs6l2ffMRBJw9SXn737MTdgjPq-p0MkLYFxqynpmBBpGyVtei7iY5Nromo_O7iig97co7dk5MjPgEDBAdnc9MtVg1KNeDX5UA7cOD4iFnh6TWlenV-R6Q268I56rnYXHixnRSisbD4936YTGdKMAuENuur1r6T6BN7nHB74cNMJfKdlcXEmG64f4TqJDGUUQbGH0TXDlRY",
+   "results" : [
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "1004 Massachusetts St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9653744,
+               "lng" : -95.2356923
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96668782989272,
+                  "lng" : -95.23444742010729
+               },
+               "southwest" : {
+                  "lat" : 38.96398817010728,
+                  "lng" : -95.23714707989274
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Pizza Tascio Lawrence",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1365,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/114753073504878726089\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jkThsUVI0cDk8g2flGHa7MzrMgauAOmIcO1dDhdoZx_FI3KXA_AIY2FPYZaBxHgxt0U8eXsxxEaYbPiAzenpGiaTzdY4oXyJk7uVIZDKVzlFL01JBmb4_rwGMZqkm7n3MhWa8hnETqPmdQBc3QZVqzoRGkeOKGoQ8T4ynm-1mWXtkNj",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJkcOOfAlvv4cRdLFtziJwrHU",
+         "plus_code" : {
+            "compound_code" : "XQ87+4P Lawrence, Kansas",
+            "global_code" : "86C6XQ87+4P"
+         },
+         "rating" : 4.3,
+         "reference" : "ChIJkcOOfAlvv4cRdLFtziJwrHU",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 57
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "818 Massachusetts St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9686961,
+               "lng" : -95.23558960000001
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.97000332989272,
+                  "lng" : -95.23410487010729
+               },
+               "southwest" : {
+                  "lat" : 38.96730367010728,
+                  "lng" : -95.23680452989274
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Pickleman's Gourmet Cafe",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 775,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111917444189091573045\"\u003ePickleman&#39;s Gourmet Cafe\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jnd_Cpb4uIrSstS5fTTpmyXpqvN7z5C9VUYJfbRC-LmrnC04Juv7uYkLUZCuosvZXHg6s_E3kihq0UYcMMmP-P0jJB_MpXsX9yiaeB79GCrUvItISIeZpy5I8AYCWBdaL3eDc0_7RN3qgro5XpQEKnZ0xG6bzZGPai5LrZ8glqCsVN2",
+               "width" : 1172
+            }
+         ],
+         "place_id" : "ChIJw99pQltvv4cRHj_B0eRJ9bs",
+         "plus_code" : {
+            "compound_code" : "XQ97+FQ Lawrence, Kansas",
+            "global_code" : "86C6XQ97+FQ"
+         },
+         "price_level" : 1,
+         "rating" : 4.4,
+         "reference" : "ChIJw99pQltvv4cRHj_B0eRJ9bs",
+         "types" : [
+            "cafe",
+            "restaurant",
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 599
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "1100 Mississippi St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.963488,
+               "lng" : -95.243809
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96482477989272,
+                  "lng" : -95.24259287010729
+               },
+               "southwest" : {
+                  "lat" : 38.96212512010727,
+                  "lng" : -95.24529252989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Toppers Pizza",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/118018466800358589039\"\u003eShari Portenier\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jnNom1_Qjn2nyWX5opTEQTspK-TY9uaz1mC8kBhERy8uS0nT5ZksCE56Dw7peMA8eUF1AqSTS2SfG872kDNl6PZKOufwlpeQ-_lZ1vNqFadi4M4EA0cuE_WRd7tmsmrzsKHQtCLy4NlC--It8GSBDVneGsPIt8mKU58aFBJ-B6BeZ24",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJdSYmn0hvv4cRGseWT3IhZms",
+         "plus_code" : {
+            "compound_code" : "XQ74+9F Lawrence, Kansas",
+            "global_code" : "86C6XQ74+9F"
+         },
+         "price_level" : 2,
+         "rating" : 4.7,
+         "reference" : "ChIJdSYmn0hvv4cRGseWT3IhZms",
+         "types" : [
+            "meal_takeaway",
+            "meal_delivery",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 469
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "837 Massachusetts St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9680079,
+               "lng" : -95.23627259999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96936252989272,
+                  "lng" : -95.23473657010729
+               },
+               "southwest" : {
+                  "lat" : 38.96666287010728,
+                  "lng" : -95.23743622989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Papa Kenos Pizzeria",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/117668838564646386982\"\u003eNick\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jmZSxF7_SpE6LkDUPrtYnHnwj3FtzuiKVlbPVAF8e3YGsG2smVM9UW6GqM1Os4FAYFb0cLa8BtwDIM5aFkALI7Uw91fBQgIZGnFd3T-cOBA71cZ136I9X-3fHgyIA-0VNzWswjt7KK4E4eW3RQxduFgezsK1WjbbwqCKzOacXtTgwXw",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJJybIoFpvv4cRWXc26a1jlZ8",
+         "plus_code" : {
+            "compound_code" : "XQ97+6F Lawrence, Kansas",
+            "global_code" : "86C6XQ97+6F"
+         },
+         "price_level" : 1,
+         "rating" : 4.4,
+         "reference" : "ChIJJybIoFpvv4cRWXc26a1jlZ8",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1054
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "704 Massachusetts St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.970965,
+               "lng" : -95.23571899999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.97231402989272,
+                  "lng" : -95.23443687010726
+               },
+               "southwest" : {
+                  "lat" : 38.96961437010728,
+                  "lng" : -95.23713652989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Rudy's Pizzeria",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/101069847051153209919\"\u003eBinh Bui\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jl2oRD5Ta67fBan_hJLyqgL-u2AzOC9gFZOk2__0b3vcB07HyMe3iswHCFZzlBOQanVzTRebJgBzGjpktkV1QB7c8R6xLn_oAvjVsLJKI6jaaneOtxJhpg_iz3DL1O97GIrP3Oh-3R7IZHTNkXIZzBNQum8yP3YHi2gtgeTszqwefJT",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJ5YNg6lxvv4cRoq3xl9A3bHo",
+         "plus_code" : {
+            "compound_code" : "XQC7+9P Lawrence, Kansas",
+            "global_code" : "86C6XQC7+9P"
+         },
+         "price_level" : 1,
+         "rating" : 4.5,
+         "reference" : "ChIJ5YNg6lxvv4cRoq3xl9A3bHo",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 471
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "934 Massachusetts St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.96619,
+               "lng" : -95.23555899999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96754157989272,
+                  "lng" : -95.23438037010727
+               },
+               "southwest" : {
+                  "lat" : 38.96484192010728,
+                  "lng" : -95.23708002989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Minsky's Pizza",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 2988,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/118060917169760222489\"\u003eTony Sutton\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jmY9qX3cmKHwjV000l4-EQNLncu39APLWG2kZVXgX5pmCt7WrDu9NXyGnJO0L0rSm83Y3D9e7TGYmcj-xkNYa-SWskCPt4J9lJ7KEboRO7ov61DHdg2uH6bfctN4X4hISfd-91MqjN6Zu8pMmdUaEUnJ3AEepEE9d2xoe3R-zvplDiT",
+               "width" : 3984
+            }
+         ],
+         "place_id" : "ChIJMw3qwlpvv4cRAuwwn08BmP4",
+         "plus_code" : {
+            "compound_code" : "XQ87+FQ Lawrence, Kansas",
+            "global_code" : "86C6XQ87+FQ"
+         },
+         "price_level" : 2,
+         "rating" : 4.3,
+         "reference" : "ChIJMw3qwlpvv4cRAuwwn08BmP4",
+         "types" : [
+            "meal_takeaway",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 682
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "918 Mississippi St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9668255,
+               "lng" : -95.24371549999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96825997989272,
+                  "lng" : -95.24237437010727
+               },
+               "southwest" : {
+                  "lat" : 38.96556032010728,
+                  "lng" : -95.24507402989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Papa Johns Pizza",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 6028,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106940116323519999669\"\u003ePapa John&#39;s Pizza\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jkS-Vjmd_LVjNN5pPoGACrgdNyaYd4luXox0bcC9LD-HguF8_loFCR9hikdrirotDDu-2OM1euayFhPMIlrHD5dvSU6rcJAEd4LEaxm_g8nZDJ-9iYnepWPBkpf5mBzjGcqBR47ym4mkbG8gj4rVa5elGZRGt6um9twIAE6_oMqQvp-",
+               "width" : 6027
+            }
+         ],
+         "place_id" : "ChIJydLK9kZvv4cRxxP1f0mQwlU",
+         "plus_code" : {
+            "compound_code" : "XQ84+PG Lawrence, Kansas",
+            "global_code" : "86C6XQ84+PG"
+         },
+         "price_level" : 1,
+         "rating" : 3.9,
+         "reference" : "ChIJydLK9kZvv4cRxxP1f0mQwlU",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 134
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "814 Massachusetts St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9687708,
+               "lng" : -95.23569499999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.97012472989272,
+                  "lng" : -95.23446202010727
+               },
+               "southwest" : {
+                  "lat" : 38.96742507010727,
+                  "lng" : -95.23716167989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Limestone Pizza•Kitchen•Bar",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 2952,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100085971885194635861\"\u003eTim Miller\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jl3phS5Sm8XlH_4RMMsTO_uvQsj-hiigMaLphVlPnrR_ZGt4h4Yi-oiiz0aKnZOwONDyr0Dz9-5PQ44xFcM0dRmYxvwZWs39-fJmz2JytcKjTrMTJH9VfT2fKNcLiC5Mu2tg6gKWbAG13rsQF_rtL-fJ33Zl80s0HcOVyfQo8jk_t8-",
+               "width" : 5248
+            }
+         ],
+         "place_id" : "ChIJO-fqQltvv4cR7s8kn2rWZ4A",
+         "plus_code" : {
+            "compound_code" : "XQ97+GP Lawrence, Kansas",
+            "global_code" : "86C6XQ97+GP"
+         },
+         "price_level" : 2,
+         "rating" : 4.4,
+         "reference" : "ChIJO-fqQltvv4cR7s8kn2rWZ4A",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 826
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "900 Mississippi St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9673287,
+               "lng" : -95.24386980000001
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96877117989272,
+                  "lng" : -95.24252302010727
+               },
+               "southwest" : {
+                  "lat" : 38.96607152010728,
+                  "lng" : -95.24522267989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Big Mill",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 2160,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/118256430000049052091\"\u003eChris Lorenzen\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jlas0CkzlYDL46NRchKIsk1y_3Y05hlcuQRDnQpKt-yoaEZFRbecoZhG-cAlQxJl0YB_wRGLA9xf4eDtjxCrua1VFKMLda4ywx3ltKEq9rm3edO9hYAHKyOpqcWZwnPilxAzrnF_qF8sACT46KRQAuEdyuMDCngdo_JtX4krASvW7Xs",
+               "width" : 3840
+            }
+         ],
+         "place_id" : "ChIJp7xWZZ1vv4cR5UMWQfOGd8s",
+         "plus_code" : {
+            "compound_code" : "XQ84+WF Lawrence, Kansas",
+            "global_code" : "86C6XQ84+WF"
+         },
+         "price_level" : 2,
+         "rating" : 4.5,
+         "reference" : "ChIJp7xWZZ1vv4cR5UMWQfOGd8s",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 346
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "1200 Oread Ave, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9623172,
+               "lng" : -95.2425762
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96352522989272,
+                  "lng" : -95.24119537010728
+               },
+               "southwest" : {
+                  "lat" : 38.96082557010728,
+                  "lng" : -95.24389502989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+         "icon_background_color" : "#7B9EB0",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+         "name" : "Slice of History",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 2036,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/114847554661145085738\"\u003eChan\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jnaVLZTrLZDqj2w9UrUBLLw3mKdlq1l_ToMZw5uRrDJEFBk1yfsIgkimUNg65lIJzXfBthw28JJ6mRgFDRjK4lRC-QRMwioCwEaCfNklrxSjjs-ZFy4kMxar_kgHMdEwuSCZrhOE0EDKs5bA1u-kD_Pf4h9oEdYKQsL889_KT5w8vQN",
+               "width" : 2487
+            }
+         ],
+         "place_id" : "ChIJ7XVPzEhvv4cRKpaDmThAazE",
+         "plus_code" : {
+            "compound_code" : "XQ64+WX Lawrence, Kansas",
+            "global_code" : "86C6XQ64+WX"
+         },
+         "rating" : 3.2,
+         "reference" : "ChIJ7XVPzEhvv4cRKpaDmThAazE",
+         "types" : [
+            "meal_delivery",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 19
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "900 Illinois St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9672877,
+               "lng" : -95.2449515
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96863737989272,
+                  "lng" : -95.24373667010728
+               },
+               "southwest" : {
+                  "lat" : 38.96593772010728,
+                  "lng" : -95.24643632989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Burrito King",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/116431745621029673792\"\u003eDaniel Fogel\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jk_DI9OWnhyUM65mGS8gsKQ2WQeNFYnYbGMjb4nuINdRTwJuXZ2j3MrHjeC2-zjba3ybyr1uraMxt_PFnMsedfoZnPrwUQF_XivFx_SVFS4pcG25JSutGn_MnOWCAfQ-tVZgeYw6kv6OPtTT0sCta-pXcrKtlqur8vNZXa8VeuTT9DB",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJtYqJ4kZvv4cRbxU9T3r46CU",
+         "plus_code" : {
+            "compound_code" : "XQ84+W2 Lawrence, Kansas",
+            "global_code" : "86C6XQ84+W2"
+         },
+         "price_level" : 1,
+         "rating" : 4.3,
+         "reference" : "ChIJtYqJ4kZvv4cRbxU9T3r46CU",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1238
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "The Market At, Kansas Student Union, 1301 Jayhawk Blvd, Lawrence, KS 66045, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.959262,
+               "lng" : -95.2436151
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96057362989272,
+                  "lng" : -95.24197922010728
+               },
+               "southwest" : {
+                  "lat" : 38.95787397010727,
+                  "lng" : -95.24467887989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Pizza Hut Express",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1839,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/102153388392638569569\"\u003eJames FitzSimmons\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jkmtMywZ7l6kIM7iRVg7As9QdqU2r881wjyzWkroMNQAmwjMEaP99xT36XMP_isjdfHqYQwIwOIZJLr5kOW0CArq0AgzHvlMh5i6kdktjb-hlE5mXGyIm3Xc_CjvasWc81qm8jk3i9ak9Nvo-hW6GzeHRjFhQMj78HKfLlPg67jWm4N",
+               "width" : 3524
+            }
+         ],
+         "place_id" : "ChIJeWiVC9Zvv4cR5rl2ENumogI",
+         "plus_code" : {
+            "compound_code" : "XQ54+PH Lawrence, Kansas",
+            "global_code" : "86C6XQ54+PH"
+         },
+         "price_level" : 1,
+         "rating" : 5,
+         "reference" : "ChIJeWiVC9Zvv4cR5rl2ENumogI",
+         "types" : [
+            "meal_takeaway",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 1
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "715 Massachusetts St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9706415,
+               "lng" : -95.2361078
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.97197497989271,
+                  "lng" : -95.23466272010728
+               },
+               "southwest" : {
+                  "lat" : 38.96927532010727,
+                  "lng" : -95.23736237989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "715 Restaurant",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1694,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/102264814394431587938\"\u003e715 Restaurant\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jkzHJ4Jx37akc9reHOX-CGcGgwCTrrvNW0sg7D2eAtQ3hQ0MXyCaeWf3T2lMlmO951fQCYGYlAjLrnwqGPXXkDTz9qBVY6qK44Vkp0f5itGPBDy2PscWJiQCJKj9vtcHXfFlOHhs1oObBfVBe4zTw2O4XAzeyPfSHeY6K07kmtUPGfy",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJdfdavlxvv4cR4Pa1OBbk9eE",
+         "plus_code" : {
+            "compound_code" : "XQC7+7H Lawrence, Kansas",
+            "global_code" : "86C6XQC7+7H"
+         },
+         "price_level" : 3,
+         "rating" : 4.4,
+         "reference" : "ChIJdfdavlxvv4cR4Pa1OBbk9eE",
+         "types" : [ "restaurant", "bar", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 918
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "The Underground At Wescoe Hall, 1445 Jayhawk Blvd, Lawrence, KS 66045, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.95743,
+               "lng" : -95.24781969999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.95900657989272,
+                  "lng" : -95.24633782010727
+               },
+               "southwest" : {
+                  "lat" : 38.95630692010728,
+                  "lng" : -95.24903747989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Pizza Hut Express",
+         "photos" : [
+            {
+               "height" : 576,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/112271309775206989847\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jlUGArnd2oqq2iXcVTcEc04uM_X74q7hr5-6se7FzN-PRQJym5a_B117jTZSW6Z3BMUkrddCnBUQW6WRlA2fhvy1AAjdbOzexKCp7H_kCfBkdfVlHL7CSOd0UFhX8rf_aUCgKFDFaw6W9ajUPevzFvlm7DoKHOVty2Icim0FE8eV5dp",
+               "width" : 1024
+            }
+         ],
+         "place_id" : "ChIJa3ie7ppvv4cRXWSiA2SM5ok",
+         "plus_code" : {
+            "compound_code" : "XQ42+XV Lawrence, Kansas",
+            "global_code" : "86C6XQ42+XV"
+         },
+         "price_level" : 1,
+         "rating" : 5,
+         "reference" : "ChIJa3ie7ppvv4cRXWSiA2SM5ok",
+         "types" : [
+            "meal_takeaway",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 1
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "801 Massachusetts St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9692203,
+               "lng" : -95.2360829
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.97057202989272,
+                  "lng" : -95.23464532010728
+               },
+               "southwest" : {
+                  "lat" : 38.96787237010727,
+                  "lng" : -95.23734497989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "The Basil Leaf Café",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1836,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100754760741228826051\"\u003eJavier Ahumada\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jkOeaBuswtsUYD_fz03Vt6at4c3a0TiMqET8lAf-R5M6izeNQkDR7hEkfdywyVzZhoN9isj4jtFjno53rnXVhdXHedELP504EUytQeSZ6DF5islG0l_Qw5_ZRWBn73QfkbLzOuvHf70yZLetYZ32NhpcBHBzv9z53Ndo_KDQaJSpK1o",
+               "width" : 3264
+            }
+         ],
+         "place_id" : "ChIJs3-ZTt1uv4cRDqnv-3BK4CY",
+         "plus_code" : {
+            "compound_code" : "XQ97+MH Lawrence, Kansas",
+            "global_code" : "86C6XQ97+MH"
+         },
+         "price_level" : 2,
+         "rating" : 4.5,
+         "reference" : "ChIJs3-ZTt1uv4cRDqnv-3BK4CY",
+         "types" : [
+            "restaurant",
+            "cafe",
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 679
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "832 Iowa St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9681899,
+               "lng" : -95.2599594
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96952692989272,
+                  "lng" : -95.25869172010728
+               },
+               "southwest" : {
+                  "lat" : 38.96682727010728,
+                  "lng" : -95.26139137989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+         "icon_background_color" : "#7B9EB0",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+         "name" : "Domino's Pizza",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/101407573898866907673\"\u003eDomino&#39;s Pizza\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jniLRbORKaiXKC92naWcZCKKl4IFZeb6YZMO7eV3vsRN4Lp5JX1hxm6Q4BaN773pD07_Wt5zxrH65iZ4Za-9ycI4mt3gr3XSnspSiHlj6lDut2doinXNXoTa1usIgbuALnsbJDfA7xmDBrHs7MJrrMfNUgwXmP1BhwGKFLluiRVykmv",
+               "width" : 3024
+            }
+         ],
+         "place_id" : "ChIJw375gyRvv4cRPOIWNbQbf6M",
+         "plus_code" : {
+            "compound_code" : "XP9R+72 Lawrence, Kansas",
+            "global_code" : "86C6XP9R+72"
+         },
+         "price_level" : 1,
+         "rating" : 4.1,
+         "reference" : "ChIJw375gyRvv4cRPOIWNbQbf6M",
+         "types" : [
+            "meal_takeaway",
+            "meal_delivery",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 320
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "1601 W 23rd St, Lawrence, KS 66046, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9417512,
+               "lng" : -95.254834
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.94316677989272,
+                  "lng" : -95.25340772010729
+               },
+               "southwest" : {
+                  "lat" : 38.94046712010728,
+                  "lng" : -95.25610737989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Pizza Shuttle",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1242,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/116441630404119864856\"\u003eRiley Swickard\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jnOriTrcPikHXVGqWmj5hNKyNOavvUGyJFMzvlo6s2vWZKlphKlf6HjDodaOEgGsT8VPkm2npiPPwVQ-oYF0gvi4enq8QSwbOzyinXhpFPtw_oq0NOHS4cmHOXgEauscofmqCNNUH7rUP4YJW17N9xOXIPSP7K4M2RD9UVhFQLKmK3A",
+               "width" : 1242
+            }
+         ],
+         "place_id" : "ChIJh9mQmcVov4cRI-4Fj5L-Sno",
+         "plus_code" : {
+            "compound_code" : "WPRW+P3 Lawrence, Kansas",
+            "global_code" : "86C6WPRW+P3"
+         },
+         "price_level" : 1,
+         "rating" : 4.5,
+         "reference" : "ChIJh9mQmcVov4cRI-4Fj5L-Sno",
+         "types" : [
+            "meal_takeaway",
+            "meal_delivery",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 1040
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "1115 Massachusetts St, Lawrence, KS 66044, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9632008,
+               "lng" : -95.23621659999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.96448857989272,
+                  "lng" : -95.23480712010726
+               },
+               "southwest" : {
+                  "lat" : 38.96178892010728,
+                  "lng" : -95.23750677989271
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Fuzzy's Taco Shop",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/102670287145921800598\"\u003eTyler Atkerson\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jmgrzWI2nIOV1DRn6Vy6nt5pSYcVpkw_HwDYkt9DQaoTD9qbk-4ik9awlA3Pbsl5o9C6aS1Z-0lwcOJASnNy2JMZKalHf_feFth2L6WMfQja5eRaZqJRuRjEgMyVWYPb0d0BMyurFYvYFcvEi4e8jRLcb_1UIxWU41Ci8Lvjw1xhDnR",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJW2PlFFBvv4cRQaJJWc1Goi8",
+         "plus_code" : {
+            "compound_code" : "XQ77+7G Lawrence, Kansas",
+            "global_code" : "86C6XQ77+7G"
+         },
+         "price_level" : 1,
+         "rating" : 4.2,
+         "reference" : "ChIJW2PlFFBvv4cRQaJJWc1Goi8",
+         "types" : [ "bar", "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1525
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "1528 W 23rd St, Lawrence, KS 66046, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9430513,
+               "lng" : -95.2538115
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.94431077989272,
+                  "lng" : -95.25251487010728
+               },
+               "southwest" : {
+                  "lat" : 38.94161112010728,
+                  "lng" : -95.25521452989273
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Little Caesars Pizza",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1000,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/102189567611576179746\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jmo_FbXVNqHfwzabFza1nthKt9-rubcAAwdCgmh7vm329UhaYpkx5wT0w_VMLr_4c40rHQvp_SgsVmoofFWDpuGGKRHOWP0Sv5dTrXLV6yk50h-8rsG36UlxgjK8j2tQ2oqvfA-nB8lrxHb48tgMY3FPL4CSsRZ1_aso8xrQSd1hV0b",
+               "width" : 1000
+            }
+         ],
+         "place_id" : "ChIJ5QozXJZpv4cRnPid92rREoc",
+         "plus_code" : {
+            "compound_code" : "WPVW+6F Lawrence, Kansas",
+            "global_code" : "86C6WPVW+6F"
+         },
+         "price_level" : 1,
+         "rating" : 3.5,
+         "reference" : "ChIJ5QozXJZpv4cRnPid92rREoc",
+         "types" : [
+            "meal_takeaway",
+            "meal_delivery",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 108
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "600 W 23rd St, Lawrence, KS 66046, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9431686,
+               "lng" : -95.2439656
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.94449902989273,
+                  "lng" : -95.24253472010727
+               },
+               "southwest" : {
+                  "lat" : 38.94179937010728,
+                  "lng" : -95.24523437989272
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+         "icon_background_color" : "#7B9EB0",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+         "name" : "Pizza Hut",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 683,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/114052918856659845953\"\u003ePizza Hut\u003c/a\u003e"
+               ],
+               "photo_reference" : "AUjq9jlP7a8b4zREoMeEcKDGe7b30vDo1y2dU1HsVB_RdVh2yvue0naYMomOaB6zItLtaVtLv_dAq4hlxgKrlgIx2cz-syCNpOFs0C-MmLIZSC_1Wf3pLlsDqNcUgOUUfSoY4pBCWqoOcGkUSoO0v9Dvm4rc6mYkjVhFOEJiIUqvs5jPYPtP",
+               "width" : 1025
+            }
+         ],
+         "place_id" : "ChIJNV144Llov4cRPwBdn-UxSA8",
+         "plus_code" : {
+            "compound_code" : "WQV4+7C Lawrence, Kansas",
+            "global_code" : "86C6WQV4+7C"
+         },
+         "price_level" : 1,
+         "rating" : 3.5,
+         "reference" : "ChIJNV144Llov4cRPwBdn-UxSA8",
+         "types" : [
+            "meal_takeaway",
+            "meal_delivery",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 342
+      }
+   ],
+   "status" : "OK"
+}

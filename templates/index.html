@@ -17,22 +17,24 @@
 			<form method="post">
 				<div class="big-box">
 					<div class="photo">
+						<h2>{{descriptor}}</h2>
 						<img src="/static/assets/weather/{{photo}}" alt="Weather">
 					</div>
 					<div class="text">
-						<p id="titleInfo">Weather Data Results: {{local}}</p>
-						<p id="theInfo">Current Temp: {{current_temp}}<br> Feels Like: {{feels_temp}}</p>
+						<p id="titleInfo">Weather Data Results: </p><p id="location_name">{{local}}</p>
+						<p id="theInfo">Current Temp: {{current_temp}} f<br> Feels Like: {{feels_temp}} f<br> Wind Speeds: {{wind_speed}} mph</p>
 					</div>
 					<div class="list">
-						<ul>
-							<li>Item 1</li>
-							<li>Item 2</li>
-							<li>Item 3</li>
+						<h1>Local Pizza</h1>
+						<ul style = "list-style-type: circle;">
+							<li>{{location1}}</li>
+							<li>{{location2}}</li>
+							<li>{{location3}}</li>
 						</ul>
 					</div>
 					<div class ="formBox">
 						<input type="radio" id="choice3" name="radioChoice" value="PastData">
-						<label for="choice3"> View past data</label><br>
+						<label for="choice3"> Download past data</label><br>
 
 						<label for="start"> Choose a date to view past weather data: </label>
 						<input type="date" id="PastDate" name="PastDate"
@@ -40,7 +42,7 @@
 							min="1978-01-01" max="{{today}}"><br><br>
 
 						<input type="radio" id="choice4" name="radioChoice" value="FutureData">
-						<label for="choice4">View Future data</label> <br>
+						<label for="choice4">Download Future data</label> <br>
 
 						<label for="start"> Choose a date to view future weather data: </label>
 						<input type="date" id="FutureDate" name="FutureDate"

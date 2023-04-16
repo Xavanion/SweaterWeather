@@ -1,9 +1,16 @@
 from __future__ import print_function
 from swagger_client.rest import ApiException
 from pprint import pprint
-import geocoder, swagger_client, json, flask, sqlite3, datetime
+import geocoder, swagger_client, json, flask, sqlite3, datetime, googlemaps, requests
+from geopy.geocoders import Nominatim
 from read_json import Read
 
+
+# Lat/Long boi
+geolocator = Nominatim(user_agent="Myapp")
+
+#Google maps client
+gmaps = googlemaps.Client(key="")
 
 # Flask app
 app = flask.Flask(__name__)
@@ -124,12 +131,11 @@ def forecast(location):
 def site():
     app.run(debug=True)
 
-def real_time_render(current_info):
+def real_time_render(current_info, pizza_pizza):
     return flask.render_template("index.html", today = str(today), future_min= str(today +  + datetime.timedelta(days=14)), future_max= str(today + datetime.timedelta(days=300)),
                                 current_temp = current_info['temperature']['temp'], feels_temp = current_info['temperature']['feelslike'], photo = (current_info['condition']['condition']) + '.png',
-                                local = (current_info['location']['city'] + ', ' + current_info['location']['country']))
-
-
+                                local = (current_info['location']['city'] + ', ' + current_info['location']['country']), location1=pizza_pizza['locations'][0], location2=pizza_pizza['locations'][1],
+                                location3=pizza_pizza['locations'][2], descriptor = (current_info['condition']['condition']), wind_speed = current_info['condition']['windspeed'])
 
 # Handles Default loading of Site
 @app.route('/', methods=['GET', 'POST'])
@@ -137,11 +143,19 @@ def index():
     real_time(cur_location)
     current_info = file_reader('real_time.json')
     if flask.request.method == "POST":
-        if (city_name:=flask.request.form['location']):
+        radio_choice = flask.request.form.get("radioChoice")
+        if radio_choice == 'PastData':
+            history(location, flask.request.form.get("PastDate"))
+            return flask.send_file('history.json', as_attachment=True)
+        elif radio_choice == 'FutureData':
+            future(location, flask.request.form.get("FutureDate"))
+            return flask.send_file('future.json', as_attachment=True)
+        elif (city_name:=flask.request.form['location']):
             real_time(city_name)
-        return flask.redirect(flask.url_for('real_time_data', variable=city_name))
+            return flask.redirect(flask.url_for('real_time_data', variable=city_name))
     # Command to render site
-    return real_time_render(current_info)
+    pizza_pizza = pizza_recommender((current_info['location']['city'] + ', ' + current_info['location']['country']))
+    return real_time_render(current_info, pizza_pizza)
 
 
 # View real time data
@@ -149,11 +163,31 @@ def index():
 def real_time_data(variable):
     real_time(variable)
     current_info = file_reader('real_time.json')
-    if flask.request.method == 'POST':
-        if (city_name:=flask.request.form['location']):
+    if flask.request.method == "POST":
+        radio_choice = flask.request.form.get("radioChoice")
+        if radio_choice == 'PastData':
+            history(location, flask.request.form.get("PastDate"))
+            return flask.send_file('history.json', as_attachment=True)
+        elif radio_choice == 'FutureData':
+            future(location, flask.request.form.get("FutureDate"))
+            return flask.send_file('future.json', as_attachment=True)
+        elif (city_name:=flask.request.form['location']):
             real_time(city_name)
-        return flask.redirect(flask.url_for('real_time_data', variable=city_name))
-    return real_time_render(current_info)
+            return flask.redirect(flask.url_for('real_time_data', variable=city_name))
+    pizza_pizza = pizza_recommender((current_info['location']['city'] + ', ' + current_info['location']['country']))
+    return real_time_render(current_info, pizza_pizza)
+
+def pizza_recommender(local):
+    geo_location = geolocator.geocode(local)
+    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=pizza%20restaurants&location="+ str(geo_location.latitude) + "%2C" + str(geo_location.longitude) + "&radius=700&key="
+    payload={}
+    headers = {}
+    response = requests.request("GET", url, headers=headers, data=payload)
+    with open('recommendations.json', "w", encoding='utf-8') as file:
+        file.write(response.text)
+    pizza_dict = file_reader('recommendations.json')
+    return pizza_dict
+
 
 def main():
     site()

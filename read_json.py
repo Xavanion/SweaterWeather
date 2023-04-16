@@ -47,15 +47,22 @@ class Read:
         conditioninfo = {}
         conditioninfo['icon'] = currentdata['condition']['icon']
         conditioninfo['condition'] = currentdata['condition']['text']
+        conditioninfo['windspeed'] = int(currentdata['wind_mph'])
         realtimedata['condition'] = conditioninfo
 
         tempinfo = {}
-        tempinfo['temp'] = currentdata['temp_f']
-        tempinfo['feelslike'] = currentdata['feelslike_f']
+        tempinfo['temp'] = int(currentdata['temp_f'])
+        tempinfo['feelslike'] = int(currentdata['feelslike_f'])
         realtimedata['temperature'] = tempinfo
 
         return realtimedata 
     
+    def recommendations(self):
+        pizza_places = {}
+        pizza_places['locations'] = [place['name'] for place in json_data['results']]
+        return pizza_places
+
+
     def forecast(self):
         daily_forecast = {}
         alldayforecast = json_data['forecast']['forecastday'][0]['hour']
@@ -148,3 +155,5 @@ class Read:
             return self.history()
         elif self.file == 'real_time.json':
             return self.realtime()
+        elif self.file == 'recommendations.json':
+            return self.recommendations()
