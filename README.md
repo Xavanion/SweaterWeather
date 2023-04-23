@@ -2,6 +2,9 @@
 ## What it does?: 
 SweaterWeather is a web application that allows users to obtain weather information for any location and receive pizza recommendations tailored to the local area.
 
+![github project](https://user-images.githubusercontent.com/29828213/233869261-ea5ffc70-0fc9-4dea-afb2-4a59162becdc.png)
+
+
 ## How to run:
 1. Download Depndencies:
 
