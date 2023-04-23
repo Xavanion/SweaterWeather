@@ -5,19 +5,22 @@ import geocoder, swagger_client, json, flask, sqlite3, datetime, googlemaps, req
 from geopy.geocoders import Nominatim
 from read_json import Read
 
+# Setup section
+weather_api_key = 'ENTER weatherapi.com API KEY HERE'
+gmap_api_key = 'ENTER GMAP API KEY HERE'
 
 # Lat/Long boi
 geolocator = Nominatim(user_agent="Myapp")
 
 #Google maps client
-gmaps = googlemaps.Client(key="")
+gmaps = googlemaps.Client(key=gmap_api_key)
 
 # Flask app
 app = flask.Flask(__name__)
 
 # Configure API key authorization: ApiKeyAuth
 configuration = swagger_client.Configuration()
-configuration.api_key['key'] = ''
+configuration.api_key['key'] = weather_api_key
 
 #Location Stoof
 g = geocoder.ip('me')
@@ -178,6 +181,7 @@ def real_time_data(variable):
     pizza_pizza = pizza_recommender((current_info['location']['city'] + ', ' + current_info['location']['country']))
     return real_time_render(current_info, pizza_pizza)
 
+# Searches location searched and then 
 def pizza_recommender(local):
     geo_location = geolocator.geocode(local)
     url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=pizza%20restaurants&location="+ str(geo_location.latitude) + "%2C" + str(geo_location.longitude) + "&radius=700&key="
@@ -189,66 +193,10 @@ def pizza_recommender(local):
     pizza_dict = file_reader('recommendations.json')
     return pizza_dict
 
+
+
 def main():
     site()
 
-
 if __name__ == "__main__":
     main()
-
-
-
-
-# Scary code for later
-'''
-# Post Request Handler
-radio_choice = flask.request.form.get("radioChoice")
-if radio_choice == 'PastData':
-    history(location, flask.request.form.get("PastDate"))
-    return flask.redirect(flask.url_for('past_history', current_info=current_info))
-elif radio_choice == 'FutureData':
-    future(location, flask.request.form.get("FutureDate"))
-    return flask.redirect(flask.url_for('future_history', current_info=current_info, local=(current_info['location']['city'])))
-
-# Render Pages w/Future Requests
-def future_render(future_data):
-    return flask.render_template("future.html", date = future_data['time_interval1']['date_and_time']['date'], temp = future_data['time_interval1']['info']['temperature'],
-                                 feels = future_data['time_interval1']['info']['feelslike'], local = 'Test')
-
-# Render Pages w/Past Requests
-def past_render(current_info):
-    pass
-
-# View past history of location
-@app.route('/city/past_history', methods=['GET', 'POST'])
-def past_history(current_info):
-    current_info = file_reader('history.json')
-    if flask.request.method == 'POST':
-        if (city_name:=flask.request.form['location']):
-            real_time(city_name)
-        return flask.redirect(flask.url_for('real_time_data', variable=city_name))
-    
-
-# Viewing Future Data for a given location
-@app.route('/<local>/future_history', methods=['GET', 'POST'])
-def future_history(current_info, local):
-    future(local)
-    current_info = file_reader('future.json')
-    if flask.request.method == 'POST':
-        radio_choice = flask.request.form.get("radioChoice")
-        if radio_choice == 'PastData':
-            history(location, flask.request.form.get("PastDate"))
-            return flask.redirect(flask.url_for('past_history'))
-        elif radio_choice == 'FutureData':
-            future(location, flask.request.form.get("FutureDate"))
-            return flask.redirect(flask.url_for('future_history'))
-        elif (city_name:=flask.request.form['location']):
-            real_time(city_name)
-        return flask.redirect(flask.url_for('real_time_data', variable=city_name))
-    return future_render(current_info)
-
-# View Hourly forecast for a location
-@app.route('/<variable>/forecast', methods=['GET', 'POST'])
-def forecast_call(location):
-    pass
-'''
