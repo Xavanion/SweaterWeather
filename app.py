@@ -1,13 +1,12 @@
 from __future__ import print_function
 from swagger_client.rest import ApiException
-from pprint import pprint
-import geocoder, swagger_client, json, flask, sqlite3, datetime, googlemaps, requests, random
+import geocoder, swagger_client, json, flask, datetime, googlemaps, requests, random
 from geopy.geocoders import Nominatim
 from read_json import Read
 
 # Setup section
-weather_api_key = 'ENTER weatherapi.com API KEY HERE'
-gmap_api_key = 'ENTER GMAP API KEY HERE'
+weather_api_key = 'Enter weatherapi.com API key Here'
+gmap_api_key = 'Enter Google Cloud API Key here'
 
 # Lat/Long boi
 geolocator = Nominatim(user_agent="Myapp")
