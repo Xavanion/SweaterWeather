@@ -11,10 +11,12 @@ h1 {
   font-size: large;
   text-decoration: underline;
 }
+
 h2 {
   text-align: center;
   color: rgb(0, 0, 0);
 }
+
 p {
   text-align: center;
   color: rgb(0, 0, 0);

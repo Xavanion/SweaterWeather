@@ -1,9 +1,11 @@
 import json
 
 class Read:
+    # Takes in file name to be read through on self.run later
     def __init__(self, filename):
         self.file = filename
 
+    # Works with history.json
     def history(self):
         location_data = {}
         location_data['country'] = json_data['location']['country']
@@ -34,6 +36,7 @@ class Read:
             i += 1
         return monthly_data
 
+    # Works with realtime.json
     def realtime(self):
         realtimedata = {}
 
@@ -57,12 +60,13 @@ class Read:
 
         return realtimedata 
     
+    # Works with recommendations.json for pizza recommendations
     def recommendations(self):
         pizza_places = {}
         pizza_places['locations'] = [place['name'] for place in json_data['results']]
         return pizza_places
 
-
+    # Works with forecast.json
     def forecast(self):
         daily_forecast = {}
         alldayforecast = json_data['forecast']['forecastday'][0]['hour']
@@ -103,6 +107,7 @@ class Read:
             i += 1
         return daily_forecast
     
+    # Works with future.json
     def future(self):
         daily_forecast = {}
         alldayforecast = json_data['forecast']['forecastday'][0]['hour']
@@ -142,6 +147,7 @@ class Read:
             i += 1
         return daily_forecast
 
+    # Function normally called to, takes in file name and redirects to function that handles it
     def run(self):
         global json_data
         with open(self.file, encoding='utf-8') as f:
