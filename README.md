@@ -31,7 +31,7 @@ SweaterWeather is a web application that allows users to obtain weather informat
       
 4. Running the application:
 
-    - Executre 'python app.py' to start the web server
+    - Run 'app.py' to start the web server
     - Navigate to 'http:/localhost:5000/ in your web browser to access the application
 
 ## 
